@@ -1,0 +1,827 @@
+/* Главный экран */
+.main-screen {
+  position: relative;
+  width: 1014px;
+  height: 700px;
+  background: #FFFFFF;
+}
+
+/* Шапка */
+.header {
+  position: absolute;
+  width: 1014px;
+  height: 49px;
+  left: 0px;
+  top: 18px;
+}
+
+/* Кнопка "Войти" в шапке */
+.login-button-header {
+  position: absolute;
+  width: 86px;
+  height: 36px;
+  left: 888px;
+  top: 18px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Rectangle 1 */
+.rectangle-1 {
+  position: absolute;
+  width: 86px;
+  height: 36px;
+  left: calc(50% - 86px/2 + 424px);
+  top: calc(50% - 36px/2 - 314px);
+  background: #E04040;
+  border-radius: 10px;
+}
+
+/* Онлайн курсы */
+.online-courses {
+  position: absolute;
+  width: 137px;
+  height: 24px;
+  left: 66px;
+  top: 24px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Линия сверху */
+.top-line {
+  position: absolute;
+  width: 1014px;
+  height: 0px;
+  left: 0px;
+  top: 67px;
+  border: 1px solid #000000;
+}
+
+/* О курсах */
+.about-courses {
+  position: absolute;
+  width: 65px;
+  height: 18px;
+  left: 258px;
+  top: 27px;
+  /* Добавьте остальные стили по желанию */
+}
+/* Контакты */
+.contacts {
+  position: absolute;
+  width: 67px;
+  height: 18px;
+  left: 372px;
+  top: 27px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Карточки с языковыми */
+.language-cards {
+  position: absolute;
+  width: 646px;
+  height: 365px;
+  left: 303px;
+  top: 207px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Английский язык */
+.english-language {
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 303px;
+  top: 207px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Rectangle 5 */
+.rectangle-5 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 303px;
+  top: 207px;
+  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Кнопка "Войти" на карточке */
+.login-button-card {
+  position: absolute;
+  width: 98px;
+  height: 25px;
+  left: 485px;
+  top: 325px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Кнопка на карточке */
+.card-button {
+  position: absolute;
+  width: 98px;
+  height: 25px;
+  left: calc(50% - 98px/2 + 27px);
+  top: calc(50% - 25px/2 - 12.5px);
+  background: #E04040;
+  border-radius: 10px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Подробнее на карточке */
+.more-details {
+  position: absolute;
+  width: 70px;
+  height: 15px;
+  left: calc(50% - 70px/2 + 27px);
+  top: calc(50% - 15px/2 - 12.5px);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  /* Добавьте остальные стили по желанию */
+}
+/* Итальянский язык */
+.italian-language {
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 649px;
+  top: 417px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Rectangle 6 */
+.rectangle-6 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 649px;
+  top: 417px;
+  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Кнопка "Войти" на карточке */
+.login-button-card-italian {
+  position: absolute;
+  width: 98px;
+  height: 25px;
+  left: 838px;
+  top: 536px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Кнопка на карточке */
+.card-button-italian {
+  position: absolute;
+  width: 98px;
+  height: 25px;
+  left: calc(50% - 98px/2 + 380px);
+  top: calc(50% - 25px/2 + 198.5px);
+  background: #E04040;
+  border-radius: 10px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Подробнее на карточке */
+.more-details-italian {
+  position: absolute;
+  width: 70px;
+  height: 15px;
+  left: calc(50% - 70px/2 + 380px);
+  top: calc(50% - 15px/2 + 198.5px);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Испанский язык */
+.spanish-language {
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 303px;
+  top: 417px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Rectangle 7 */
+.rectangle-7 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 303px;
+  top: 417px;
+  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Кнопка "Войти" на карточке */
+.login-button-card-spanish {
+  position: absolute;
+  width: 98px;
+  height: 25px;
+  left: 485px;
+  top: 536px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Кнопка на карточке */
+.card-button-spanish {
+  position: absolute;
+  width: 98px;
+  height: 25px;
+  left: calc(50% - 98px/2 + 27px);
+  top: calc(50% - 25px/2 + 198.5px);
+  background: #E04040;
+  border-radius: 10px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Подробнее на карточке */
+.more-details-spanish {
+  position: absolute;
+  width: 70px;
+  height: 15px;
+  left: calc(50% - 70px/2 + 27px);
+  top: calc(50% - 15px/2 + 198.5px);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Поиск */
+.search {
+  position: absolute;
+  width: 284px;
+  height: 548.5px;
+  left: 66px;
+  top: 132.5px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Линия */
+.line {
+  position: absolute;
+  width: 500px;
+  height: 0px;
+  left: 257.48px;
+  top: 681px;
+  border: 1px solid #000000;
+  transform: rotate(-90deg);
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Поисковая строка */
+.search-input {
+  position: absolute;
+  width: 264px;
+  height: 25.5px;
+  left: 86px;
+  top: 132.5px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Кнопка "Найти" */
+.search-button {
+  position: absolute;
+  width: 77px;
+  height: 25px;
+  left: 273px;
+  top: 133px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Строка поиска */
+.search-line {
+  box-sizing: border-box;
+  position: absolute;
+  width: 172px;
+  height: 25px;
+  left: 86px;
+  top: 132.5px;
+  background: #FFFEFE;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Введите название курса */
+.course-input-label {
+  position: absolute;
+  width: 144px;
+  height: 15px;
+  left: 100px;
+  top: 138px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #D6C7C7;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Список языковых курсов */
+.language-courses-list {
+  position: absolute;
+  width: 647px;
+  height: 527px;
+  left: 302px;
+  top: 140px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Кнопка "Смотреть все" */
+.see-all-button {
+  position: absolute;
+  width: 104px;
+  height: 25px;
+  left: 805px;
+  top: 656px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Футер */
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 71px;
+  left: 0px;
+  top: 796px;
+  background: #000000;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Логотип футера */
+.footer-logo {
+  position: absolute;
+  width: 82px;
+  height: 47px;
+  left: 186px;
+  top: 816px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Текст в футере */
+.footer-text {
+  position: absolute;
+  width: 97px;
+  height: 47px;
+  left: 413px;
+  top: 817px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  /* Добавьте остальные стили по желанию */
+}
+/* Текстовое содержимое футера */
+.footer-content {
+  position: absolute;
+  width: 319px;
+  height: 33px;
+  left: 46px;
+  top: 818px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Иконки социальных сетей в футере */
+.social-icons {
+  position: absolute;
+  width: 128px;
+  height: 36px;
+  left: 808px;
+  top: 817px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Иконка ВКонтакте */
+.vk-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 822px;
+  top: 821px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Иконка Instagram */
+.instagram-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 850px;
+  top: 821px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Иконка Facebook */
+.facebook-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 878px;
+  top: 821px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Контейнер для кнопок в футере */
+.footer-buttons {
+  position: absolute;
+  width: 180px;
+  height: 33px;
+  left: 1060px;
+  top: 815px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Кнопка "О нас" в футере */
+.about-us-button {
+  position: absolute;
+  width: 60px;
+  height: 25px;
+  left: 0px;
+  top: 0px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Кнопка "Контакты" в футере */
+.contact-button {
+  position: absolute;
+  width: 90px;
+  height: 25px;
+  left: 80px;
+  top: 0px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Кнопка "Помощь" в футере */
+.help-button {
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  left: 160px;
+  top: 0px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Иконка логотипа */
+.logo-icon {
+  position: absolute;
+  width: 152px;
+  height: 85px;
+  left: 189px;
+  top: 32px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Иконка логотипа на странице логина */
+.login-logo-icon {
+  position: absolute;
+  width: 152px;
+  height: 85px;
+  left: 615px;
+  top: 170px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Фоновое изображение для страницы логина */
+.login-background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+ /* background-image: url('../images/login-bg.jpg');*/
+  background-size: cover;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Контейнер для формы логина */
+.login-form-container {
+  position: absolute;
+  width: 450px;
+  height: 400px;
+  left: calc(50% - 225px);
+  top: calc(50% - 200px);
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Заголовок формы логина */
+.login-form-title {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  background: #E04040;
+  border-radius: 10px 10px 0px 0px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Текст в заголовке формы логина */
+.login-form-title-text {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 20px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Контейнер для полей ввода логина */
+.login-input-container {
+  position: absolute;
+  width: 320px;
+  left: calc(50% - 160px);
+  top: 100px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Поле ввода логина */
+.login-input {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  border: 1px solid #D6C7C7;
+  border-radius: 5px;
+  padding: 0px 15px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Кнопка "Войти" на форме логина */
+.login-submit-button {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  left: 0px;
+  bottom: 20px;
+  background: #E04040;
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Ссылка "Забыли пароль?" на форме логина */
+.forgot-password-link {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0px;
+  bottom: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+  cursor: pointer;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Ссылка "Регистрация" на странице логина */
+.registration-link {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0px;
+  bottom: 40px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+  cursor: pointer;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Контейнер для модального окна регистрации */
+.registration-modal {
+  position: absolute;
+  width: 450px;
+  height: 500px;
+  left: calc(50% - 225px);
+  top: calc(50% - 250px);
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Заголовок модального окна регистрации */
+.registration-modal-title {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  background: #E04040;
+  border-radius: 10px 10px 0px 0px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Текст в заголовке модального окна регистрации */
+.registration-modal-title-text {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 20px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Контейнер для полей ввода регистрации */
+.registration-input-container {
+  position: absolute;
+  width: 320px;
+  left: calc(50% - 160px);
+  top: 100px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Поле ввода регистрации */
+.registration-input {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  border: 1px solid #D6C7C7;
+  border-radius: 5px;
+  padding: 0px 15px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Кнопка "Зарегистрироваться" на форме регистрации */
+.registration-submit-button {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  left: 0px;
+  bottom: 20px;
+  background: #E04040;
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Ссылка "Уже есть аккаунт? Войти" на форме регистрации */
+.already-have-account-link {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0px;
+  bottom: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+  cursor: pointer;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Модальное окно "Помощь" */
+.help-modal {
+  position: absolute;
+  width: 450px;
+  height: 300px;
+  left: calc(50% - 225px);
+  top: calc(50% - 150px);
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Заголовок модального окна "Помощь" */
+.help-modal-title {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  background: #E04040;
+  border-radius: 10px 10px 0px 0px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Текст в заголовке модального окна "Помощь" */
+.help-modal-title-text {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 20px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Контейнер для текста в модальном окне "Помощь" */
+.help-modal-text-container {
+  position: absolute;
+  width: 320px;
+  left: calc(50% - 160px);
+  top: 100px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Текст в модальном окне "Помощь" */
+.help-modal-text {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  /* Добавьте остальные стили по желанию */
+}
