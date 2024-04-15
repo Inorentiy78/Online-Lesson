@@ -292,14 +292,20 @@
   /* Добавьте остальные стили по желанию */
 }
 
-/* Поисковая строка */
+/* Стили для поискового поля */
 .search-input {
-  position: absolute;
-  width: 264px;
-  height: 25.5px;
-  left: 86px;
-  top: 132.5px;
-  /* Добавьте остальные стили по желанию */
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  outline: none;
 }
 
 /* Кнопка "Найти" */
