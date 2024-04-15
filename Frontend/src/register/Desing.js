@@ -6,21 +6,23 @@ function Desing() {
         <div className="container">
             <div className="main-screen"></div>
             <div className="header">
-                <div className="online-courses"></div>
+                <div className="online-courses">Онлайн-курсы</div>
                 <div className="line-top"></div>
-                <div className="about-courses"></div>
-                <div className="contacts"></div>
+                <div className="about-courses">О курсах</div>
+                <div className="contacts">Контакты</div>
                 <div className="language-cards">
-                    <div className="english-language"></div>
-                    <div className="spanish-language"></div>
-                    <div className="italian-language"></div>
-                    <div className="kazakh-language"></div>
-                    <div className="chinese-language"></div>
-                    <div className="russian-language"></div>
+                    <div className="english-language">Английский язык</div>
+                    <div className="spanish-language">Испанский язык</div>
+                    <div className="italian-language">Итальянский язык</div>
+                    <div className="kazakh-language">Казахский язык</div>
+                    <div className="chinese-language">Китайский язык</div>
+                    <div className="russian-language">Русский язык</div>
                 </div>
-                <div className="search"></div>
+                
+    <input type="text" className="search-input" placeholder="Введите запрос..." />
+
                 <div className="line"></div>
-                <div className="search-input"></div>
+                
                 <div className="search-button"></div>
                 <div className="search-string"></div>
             </div>
