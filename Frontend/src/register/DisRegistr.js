@@ -30,9 +30,9 @@ function DisRegistr() {
       // Assuming the response is text
       const data = await response.text();
 
-      if (data === 'Welcome!') {
-        // Handle successful login here if needed
-        console.log('Login successful');
+      if (data === 'Success') {
+        // Handle successful login here
+        setView('profile');
       } else {
         setMessage('Неправильный логин или пароль.');
       }
@@ -51,11 +51,16 @@ function DisRegistr() {
       )}
       {view === 'login' && (
         <div className="login">
-          <h2>Login</h2>
-          <input type="text" placeholder="Логин" value={username} onChange={(e) => setUsername(e.target.value)} />
-          <input type="password" placeholder="Пароль" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <input type="text" class="login-input" placeholder="Логин" value={username} onChange={(e) => setUsername(e.target.value)} />
+          <input type="password" class="login-input" placeholder="Пароль" value={password} onChange={(e) => setPassword(e.target.value)} />
           <button onClick={handleLogin}>Войти</button>
           {message && <p className="login-message">{message}</p>}
+        </div>
+      )}
+      {view === 'profile' && (
+        <div className="profile">
+          <img src="path_to_profile_image" alt="Profile" className="profile-icon" />
+          <button className="logout-button" onClick={() => setView('initial')}>Выйти</button>
         </div>
       )}
     </div>
