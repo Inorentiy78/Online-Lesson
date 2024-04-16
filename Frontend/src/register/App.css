@@ -1,0 +1,186 @@
+
+
+.login-register {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 600px;
+}
+
+.login, .register, .welcome {
+  width: 45%;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.login h2, .register h2, .welcome h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login input, .register input {
+  width: 90%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #F5B0B0;
+  border-radius: 5px;
+}
+
+.login button,
+.register button,
+.welcome button {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #F5B0B0;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login button:hover, .register button:hover {
+  background-color: #ebbce5;
+}
+
+.login-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #E04040;
+  color: #FFFFFF; /* белый текст */
+  border: none; /* убираем обводку */
+  border-radius: 10px; /* закругленные углы */
+  padding: 7px 17px; /* увеличиваем размер кнопки */
+  font-size: 16px; /* увеличиваем размер текста */
+  cursor: pointer;
+}
+
+
+/* главный экран */
+.main-screen {
+  position: relative;
+  width: 1014px;
+  height: 700px;
+  background: #FFFFFF;
+}
+
+/* шапка */
+.header {
+  position: absolute;
+  width: 1014px;
+  height: 49px;
+  left: 0;
+  top: 18px;
+}
+
+/* карточки с языковыми */
+.language-cards {
+  position: absolute;
+  width: 646px;
+  height: 365px;
+  left: 184px;
+  top: 207px;
+}
+
+/* карточка */
+.language-card {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+
+/* кнопка Подробнее */
+.btn-details {
+  position: absolute;
+  width: 98px;
+  height: 25px;
+  background: #E04040;
+  border-radius: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* текст языка */
+.language-text {
+  position: absolute;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+/* линии между карточками */
+.line {
+  position: absolute;
+  width: 180px;
+  height: 0px;
+  border: 1px solid #000000;
+}
+
+/* поиск */
+.search {
+  position: absolute;
+  width: 284px;
+  height: 548.5px;
+  left: 66px;
+  top: 132.5px;
+}
+
+/* поисковая строка */
+.search-input {
+  position: absolute;
+  width: 264px;
+  height: 25.5px;
+}
+
+/* кнопка Найти */
+.btn-find {
+  position: absolute;
+  width: 77px;
+  height: 25px;
+  background: #E04040;
+  border-radius: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* строка ввода */
+.input-field {
+  box-sizing: border-box;
+  position: absolute;
+  width: 172px;
+  height: 25px;
+  background: #FFFEFE;
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+
+/* текст в строке ввода */
+.input-text {
+  position: absolute;
+  width: 144px;
+  height: 15px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #D6C7C7;
+}

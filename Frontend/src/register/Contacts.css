@@ -1,0 +1,147 @@
+
+/* Главный экран */
+.main-screen {
+    position: relative;
+    width: 1014px;
+    height: 700px;
+    background: #FFFFFF;
+  }
+  
+  /* Шапка */
+.header {
+    position: absolute;
+    width: 1014px;
+    height: 49px;
+    left: 0px;
+    top: 18px;
+  }
+/* Линия сверху */
+.line-top {
+    position: absolute;
+    width: 1479px;
+    height: 0px;
+    left: 0px;
+    top: 30px; /* Измените значение top на 30px или другое значение, которое соответствует вашим требованиям */
+    border: 1px solid #000000;
+  }
+  
+/* Онлайн курсы */
+.online-courses {
+    position: absolute;
+    width: 137px;
+    height: 24px;
+    left: 66px;
+    top: 1px;
+  font-weight: 20; 
+
+    /* Добавьте остальные стили по желанию */
+  }
+/* О курсах */
+.about-courses {
+    position: absolute;
+    width: 65px;
+    height: 18px;
+    left: 258px;
+    top: 1px;
+  font-weight: 20; 
+
+    /* Добавьте остальные стили по желанию */
+  }
+  /* Контакты */
+.contacts {
+    position: absolute;
+    width: 67px;
+    height: 18px;
+    left: 372px;
+    top: 1px;
+  font-weight: 20; 
+
+    /* Добавьте остальные стили по желанию */
+  }
+/* Заголовок */
+.Zogolovok {
+    position: absolute; /* Устанавливаем позиционирование как абсолютное */
+    top: 80px; /* Поднимаем текст выше на 20px относительно базовой точки */
+    font-size: 30px;
+    left: 80px;
+}
+
+/* Карточка  */
+.rectangle {
+    box-sizing: border-box;
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    left: 200px;
+    top: 150px;
+    background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    z-index: 0;
+    /* Добавьте остальные стили по желанию */
+  }
+.h1{
+z-index: 1;
+  top: 190px;
+  left: 270px; 
+  font-weight: 500;
+}
+.h2{
+        
+    z-index: 1;
+      top: -570px;
+      left: 470px; 
+  font-weight: 500;
+}
+.mail-icon {
+    position: absolute;
+    top: 9px;
+    right: 1000px; /* Измените значение, чтобы иконка была рядом с текстом */
+    font-size: 30px; /* Измените размер иконки по вашему желанию */
+}
+.h3{
+    z-index: 1;
+      top: 290px;
+      left: 270px; 
+      font-weight: 500;
+    }
+.h4{
+        z-index: 1;
+        top: 290px;
+        left: 600px; 
+      font-weight: 500;
+    }
+.h5 {
+      position: absolute; /* Добавляем позиционирование абсолютное */
+      z-index: 1;
+      top: 390px;
+      left: 270px; 
+      font-weight: 600;
+      font-size: 25px;
+    }
+    
+.h6 {
+    position: absolute; /* Добавляем позиционирование абсолютное */
+    z-index: 1;
+    top: 390px;
+    left: 600px; 
+  font-weight: 500;
+  font-size: 25px;
+    }
+.h7{
+    position: absolute; /* Добавляем позиционирование абсолютное */
+      z-index: 1;
+      top: 490px;
+      left: 270px; 
+      font-weight: 600;
+      font-size: 25px;
+}
+.h8 {
+    position: absolute; /* Добавляем позиционирование абсолютное */
+    z-index: 1;
+    top: 490px;
+    left: 600px; 
+  font-weight: 500;
+  font-size: 25px;
+    }
+  
