@@ -14,7 +14,7 @@ function Contacts() {
                 <div className="contacts">Контакты</div>
             </div>
             <div className='Zogolovok'>Связаться с нами: </div>
-            <div className="rectangle-2 "></div>
+            <div className="rectangle "></div>
             <div className='h1'>
                 Наша почта:
             </div>
