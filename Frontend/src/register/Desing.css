@@ -42,7 +42,7 @@
   width: 137px;
   height: 24px;
   left: 66px;
-  top: 24px;
+  top: 1px;
   /* Добавьте остальные стили по желанию */
 }
 
@@ -62,7 +62,7 @@
   width: 65px;
   height: 18px;
   left: 258px;
-  top: 27px;
+  top: 1px;
   /* Добавьте остальные стили по желанию */
 }
 /* Контакты */
@@ -71,7 +71,7 @@
   width: 67px;
   height: 18px;
   left: 372px;
-  top: 27px;
+  top: 1px;
   /* Добавьте остальные стили по желанию */
 }
 
@@ -291,32 +291,49 @@
   transform: rotate(-90deg);
   /* Добавьте остальные стили по желанию */
 }
+.line-top{
+  width: 1450px;
+  border: 1px solid #000000;
+  top: 681px;
+}
 
 /* Стили для поискового поля */
 .search-input {
-  width: 100%;
+  width: 30%;
   padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 20px;
   box-sizing: border-box;
   margin-bottom: 10px;
   font-size: 14px;
+  top: 170px;
+  left: 70px;
 }
 
-.search-input:focus {
-  border-color: #007bff;
-  outline: none;
-}
 
-/* Кнопка "Найти" */
+
+/* Стили для кнопки "Найти" */
 .search-button {
   position: absolute;
   width: 77px;
   height: 25px;
-  left: 273px;
-  top: 133px;
-  /* Добавьте остальные стили по желанию */
+  top: 170px;
+  left: 400px;
+  border-radius: 20px; /* Добавляем скругление углов для создания круглой кнопки */
+  background-color:#e04040; /* Цвет фона кнопки */
+  color: #ffffff; /* Цвет текста на кнопке */
+  font-size: 14px; /* Размер шрифта */
+  border: none; /* Убираем границу */
+  cursor: pointer; /* Изменяем курсор при наведении */
+  outline: none; /* Убираем обводку при фокусе */
+  transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+  display: flex; /* Устанавливаем контейнер в режиме flex */
+  align-items: center; /* Выравниваем элементы по вертикали */
+  justify-content: center; /* Выравниваем элементы по горизонтали */
 }
+
+
+
 
 /* Строка поиска */
 .search-line {
