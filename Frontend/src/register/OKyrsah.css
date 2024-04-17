@@ -1,0 +1,93 @@
+
+/* Главный экран */
+.main-screen {
+    position: relative;
+    width: 1014px;
+    height: 700px;
+    background: #FFFFFF;
+  }
+  
+  /* Шапка */
+.header {
+    position: absolute;
+    width: 1014px;
+    height: 49px;
+    left: 0px;
+    top: 18px;
+  }
+/* Линия сверху */
+.line-top {
+    position: absolute;
+    width: 1479px;
+    height: 0px;
+    left: 0px;
+    top: 30px; /* Измените значение top на 30px или другое значение, которое соответствует вашим требованиям */
+    border: 1px solid #000000;
+  }
+  
+/* Онлайн курсы */
+.online-courses {
+    position: absolute;
+    width: 137px;
+    height: 24px;
+    left: 66px;
+    top: 1px;
+  font-weight: 20; 
+
+    /* Добавьте остальные стили по желанию */
+  }
+/* О курсах */
+.about-courses {
+    position: absolute;
+    width: 65px;
+    height: 18px;
+    left: 258px;
+    top: 1px;
+  font-weight: 20; 
+
+    /* Добавьте остальные стили по желанию */
+  }
+  /* Контакты */
+.contacts {
+    position: absolute;
+    width: 67px;
+    height: 18px;
+    left: 372px;
+    top: 1px;
+  font-weight: 20; 
+
+    /* Добавьте остальные стили по желанию */
+  }
+
+/* Заголовок */
+.Zogolovok {
+    position: absolute; /* Устанавливаем позиционирование как абсолютное */
+    top: 80px; /* Поднимаем текст выше на 20px относительно базовой точки */
+    font-size: 30px;
+    left: 60px;
+}
+/*тeкст*/
+.h1{
+    position: absolute; /* Устанавливаем позиционирование как абсолютное */
+    top: 150px; /* Поднимаем текст выше на 20px относительно базовой точки */
+    font-size: 25px;
+    left: 60px; 
+}
+.h2{
+    position: absolute; /* Устанавливаем позиционирование как абсолютное */
+    top: 200px; /* Поднимаем текст выше на 20px относительно базовой точки */
+    font-size: 25px;
+    left: 60px; 
+}
+.h3{
+    position: absolute; /* Устанавливаем позиционирование как абсолютное */
+    top: 300px; /* Поднимаем текст выше на 20px относительно базовой точки */
+    font-size: 25px;
+    left: 60px; 
+}
+.h4{
+    position: absolute; /* Устанавливаем позиционирование как абсолютное */
+    top: 400px; /* Поднимаем текст выше на 20px относительно базовой точки */
+    font-size: 25px;
+    left: 60px; 
+}
