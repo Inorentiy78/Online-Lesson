@@ -31,10 +31,11 @@
   .online-courses {
     position: absolute;
     width: 137px;
-    height: 24px;
+    height: 12px;
     left: 66px;
-    top: 1px;
-  font-weight: 20; 
+    top: -5px;
+    font-size: 19px;
+    font-weight: bold;
 
     /* Добавьте остальные стили по желанию */
   }
@@ -42,10 +43,10 @@
   /* Линия сверху */
   .line-top {
     position: absolute;
-    width: 1479px;
-    height: 0px;
-    left: 0px;
-    top: 30px; /* Измените значение top на 30px или другое значение, которое соответствует вашим требованиям */
+    width: calc(100% + 1479px); 
+    height: 0px; 
+    left: 0px; 
+    top: 30px;
     border: 1px solid #000000;
   }
   
@@ -56,8 +57,8 @@
     width: 65px;
     height: 18px;
     left: 258px;
-    top: 1px;
-  font-weight: 20; 
+    top: -2px;
+  font-weight: normal; 
 
     /* Добавьте остальные стили по желанию */
   }
@@ -67,8 +68,8 @@
     width: 67px;
     height: 18px;
     left: 372px;
-    top: 1px;
-  font-weight: 20; 
+    top: -2px;
+  font-weight: normal; 
 
     /* Добавьте остальные стили по желанию */
   }
@@ -343,10 +344,9 @@
     display: flex;
     flex-direction: column;
     gap: 5px; /* Увеличиваем пространство между элементами в списке */
-  font-weight: 20; 
-
+    font-weight: 20; 
+    font-size: 22px; 
   }
-  
   
   /* Линия */
   .line {
