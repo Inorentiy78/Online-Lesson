@@ -1,3 +1,4 @@
+//главный экран после захода по паролю и логину
 import React, { useState } from 'react';
 import './Home2.css'; // Подключаем файл стилей
 
