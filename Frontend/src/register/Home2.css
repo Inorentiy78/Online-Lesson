@@ -25,8 +25,6 @@
     /* Добавьте остальные стили по желанию */
   }
   
-  
-  
   /* Онлайн курсы */
   .online-courses0 {
     position: absolute;
@@ -551,3 +549,18 @@
   display: block;
 }
 
+.PanelKyrs1,
+.PanelKyrs2,
+.PanelKyrs3 {
+  display: none;
+}
+
+.PanelKyrs1.show,
+.PanelKyrs2.show,
+.PanelKyrs3.show {
+  display: block;
+}
+
+.arrow {
+  cursor: pointer;
+}

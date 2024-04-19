@@ -9,9 +9,11 @@ function Home2() {
         setPanelVisible(!isPanelVisible);
     };
 
-    const handleToggle = () => {
-        const panel = document.getElementById('comboBoxPanel');
-        panel.classList.toggle('show');
+    const handleToggle = (panelId) => {
+      const panel = document.getElementById(panelId);
+      console.log(panelId, panel);
+      panel.classList.toggle('show');
+      console.log(panel.classList.contains('show'));
     };
 
     return (
@@ -28,35 +30,35 @@ function Home2() {
                 </div>
                 {isPanelVisible && (
   <div className={isPanelVisible ? "panel visible" : "panel"}>
-    <div className="comboBoxHeader" onClick={handleToggle}>
-      Мои курсы
-      <span className="arrow">&#9662;</span> {/* Стрелочка вниз */}
+    <div className="comboBoxHeader" onClick={() => handleToggle('comboBoxPanel')}>
+        Мои курсы
+        <span className="arrow">&#9662;</span>
     </div>
     <div id="comboBoxPanel" className="comboBoxPanel">
-      <p className="Kyrs1" onClick={handleToggle}>
-        Курс 1
-        <span className="arrow">&#9662;</span> {/* Стрелочка вниз */}
-      </p>
-      <div id="PanelKyrs1" className="PanelKyrs1">
-        тестовые задания
-        видео-уроки
-      </div>
-      <div className="Kyrs2" onClick={handleToggle}>
-        Курс 2
-        <span className="arrow">&#9662;</span> {/* Стрелочка вниз */}
-      </div>
-      <div id="PanelKyrs2" className="PanelKyrs2">
-        тестовые задания
-        видео-уроки
-      </div>
-      <div className="Kyrs3" onClick={handleToggle}>
-        Курс 3
-        <span className="arrow">&#9662;</span> {/* Стрелочка вниз */}
-      </div>
-      <div id="PanelKyrs3" className="PanelKyrs1">
-        тестовые задания
-        видео-уроки
-      </div>
+        <p className="Kyrs1" onClick={() => handleToggle('PanelKyrs1')}>
+            Курс 1
+            <span className="arrow" onClick={(e) => { e.stopPropagation(); handleToggle('PanelKyrs1')}}>&#9662;</span>
+        </p>
+        <div id="PanelKyrs1" className="PanelKyrs1">
+            <p>тестовые задания</p>
+            <p>видео-уроки</p>
+        </div>
+        <p className="Kyrs2" onClick={() => handleToggle('PanelKyrs2')}>
+            Курс 2
+            <span className="arrow" onClick={(e) => { e.stopPropagation(); handleToggle('PanelKyrs2')}}>&#9662;</span>
+        </p>
+        <div id="PanelKyrs2" className="PanelKyrs2">
+            <p>тестовые задания</p>
+            <p>видео-уроки</p>
+        </div>
+        <p className="Kyrs3" onClick={() => handleToggle('PanelKyrs3')}>
+            Курс 3
+            <span className="arrow" onClick={(e) => { e.stopPropagation(); handleToggle('PanelKyrs3')}}>&#9662;</span>
+        </p>
+        <div id="PanelKyrs3" className="PanelKyrs3">
+            <p>тестовые задания</p>
+            <p>видео-уроки</p>
+        </div>
     </div>
     {/* Добавьте другие пункты меню по желанию */}
   </div>
