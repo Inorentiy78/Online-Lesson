@@ -25,15 +25,16 @@
     /* Добавьте остальные стили по желанию */
   }
   
+  
+  
   /* Онлайн курсы */
   .online-courses {
     position: absolute;
-    width: 180px;
-    height: 12px;
-    left: 100px;
-    top: -5px;
-    font-size: 24px;
-    font-weight: bold;
+    width: 137px;
+    height: 24px;
+    left: 66px;
+    top: 1px;
+  font-weight: 20; 
 
     /* Добавьте остальные стили по желанию */
   }
@@ -41,10 +42,10 @@
   /* Линия сверху */
   .line-top {
     position: absolute;
-    width: calc(100% + 1479px); 
-    height: 0px; 
-    left: 0px; 
-    top: 40px;
+    width: 1479px;
+    height: 0px;
+    left: 0px;
+    top: 30px; /* Измените значение top на 30px или другое значение, которое соответствует вашим требованиям */
     border: 1px solid #000000;
   }
   
@@ -52,12 +53,11 @@
   /* О курсах */
   .about-courses {
     position: absolute;
-    width: 100px;
+    width: 65px;
     height: 18px;
-    left: 350px;
-    top: -2px;
-    font-size: 20px;
-    font-weight: normal; 
+    left: 258px;
+    top: 1px;
+  font-weight: 20; 
 
     /* Добавьте остальные стили по желанию */
   }
@@ -66,34 +66,11 @@
     position: absolute;
     width: 67px;
     height: 18px;
-    left: 500px;
-    top: -2px;
-    font-size: 20px;
-    font-weight: normal; 
+    left: 372px;
+    top: 1px;
+  font-weight: 20; 
 
     /* Добавьте остальные стили по желанию */
-  }
-
-  .nametext{
-    position: absolute;
-    font-size: 20px;
-    right: -680px;
-    top: -5px;
-    z-index: 1100;
-  }
-  
-  .circle {
-    position: absolute;
-    width: 50px; /* Increase width */
-    height: 50px; /* Increase height */
-    right: -740px; /* Adjust position */
-    border-radius: 50%;
-    background-color: #E87C7C;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: -14px;
-    z-index: 1100;
   }
   
   /* Карточки с языковыми */
@@ -142,6 +119,7 @@
     top: 70px;
     z-index: 2;
     font-size: 20px;
+  
     /* Добавьте остальные стили по желанию */
   }
   /* Итальянский язык */
@@ -153,6 +131,7 @@
     top: 70px;
     z-index: 2;
     font-size: 20px;
+  
     /* Добавьте остальные стили по желанию */
   }
   /*Казахский язык*/
@@ -164,6 +143,7 @@
     top: 280px;
     z-index: 2;
     font-size: 20px;
+  
   }
   /*Китайский язык*/
   .chinese-language{
@@ -174,6 +154,7 @@
     top: 470px;
     z-index: 2;
     font-size: 20px;
+  
   }
   /*Русский язык*/
   .russian-language{
@@ -184,7 +165,9 @@
     top: 470px;
     z-index: 2;
     font-size: 20px;
+  
   }
+  
   
   /* Rectangle 2 русс*/
   .rectangle-2 {
@@ -360,9 +343,10 @@
     display: flex;
     flex-direction: column;
     gap: 5px; /* Увеличиваем пространство между элементами в списке */
-    font-weight: 20; 
-    font-size: 22px; 
+  font-weight: 20; 
+
   }
+  
   
   /* Линия */
   .line {
@@ -380,13 +364,13 @@
 /* Стили для поискового поля */
 .input {
   position: absolute;
-  width: 25%;
+  width: 27%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 20px;
   box-sizing: border-box;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 14px;
   top: 160px;
   left: 90px;
 }
@@ -396,15 +380,14 @@
   /* Стили для кнопки "Найти" */
   .search-button {
     position: absolute;
-    width: 110px;
-    height: 35px;
-    top: 160px;
-    left: 370px;
+    width: 77px;
+    height: 25px;
+    top: 170px;
+    left: 400px;
     border-radius: 20px; /* Добавляем скругление углов для создания круглой кнопки */
     background-color:#e04040; /* Цвет фона кнопки */
     color: #ffffff; /* Цвет текста на кнопке */
-    font-size: 18px;
-    font-weight: bold; /* Размер шрифта */
+    font-size: 14px; /* Размер шрифта */
     border: none; /* Убираем границу */
     cursor: pointer; /* Изменяем курсор при наведении */
     outline: none; /* Убираем обводку при фокусе */
@@ -446,6 +429,28 @@
   .language-card:hover {
     background-color: #e0e0e0; /* Изменяем цвет фона при наведении */
   }
+
+.nametext{
+  position: absolute;
+  font-size: 20px;
+  right: -400px;
+  top: -8px;
+  z-index: 1100;
+}
+
+.circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #E87C7C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -455px;
+  top: -14px;
+  z-index: 1100;
+}
 
 .letter {
   font-size: 24px;
@@ -545,3 +550,4 @@
 #course3Panel.show {
   display: block;
 }
+
