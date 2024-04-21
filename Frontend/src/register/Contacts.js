@@ -15,19 +15,19 @@ function Contacts() {
             </div>
             <div className='Zogolovok0'>Связаться с нами: </div>
             <div className="rectangle "></div>
-            <div className='h10'>
+            <div className='h1'>
                 Наша почта:
             </div>
-            <div className='h20'>
+            <div className='h2'>
                 onlinelessons@gmail.com
                 
             </div>
-            <div className='h30'>Номер администрации: </div>
-            <div className='h40'> +7-(***)-***-**-** </div>
-            <div className='h50'>WhatsApp: </div>
-            <div className='h60'> +7-(***)-***-**-** </div>
-            <div className='h70'>Telegram: </div>
-            <div className='h80'>@onlinelessons</div>
+            <div className='h3'>Номер администрации: </div>
+            <div className='h4'> +7-(***)-***-**-** </div>
+            <div className='h5'>WhatsApp: </div>
+            <div className='h6'> +7-(***)-***-**-** </div>
+            <div className='h7'>Telegram: </div>
+            <div className='h8'>@onlinelessons</div>
         </div>
     );
 }
