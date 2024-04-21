@@ -80,68 +80,58 @@
     z-index: 0;
     /* Добавьте остальные стили по желанию */
   }
-.h10{
-z-index: 1;
-  top: 190px;
-  left: 270px; 
-  font-weight: 500;
-}
-.h20{
-        
-    z-index: 1;
-      top: -570px;
-      left: 470px; 
-  font-weight: 500;
-}
 .mail-icon0 {
     position: absolute;
     top: 9px;
     right: 1000px; /* Измените значение, чтобы иконка была рядом с текстом */
     font-size: 30px; /* Измените размер иконки по вашему желанию */
 }
-.h30{
-    z-index: 1;
-      top: 290px;
-      left: 270px; 
-      font-weight: 500;
-    }
-.h40{
-        z-index: 1;
-        top: 290px;
-        left: 600px; 
-      font-weight: 500;
-    }
-.h50 {
-      position: absolute; /* Добавляем позиционирование абсолютное */
-      z-index: 1;
-      top: 390px;
-      left: 270px; 
-      font-weight: 600;
-      font-size: 25px;
-    }
-    
-.h60 {
-    position: absolute; /* Добавляем позиционирование абсолютное */
-    z-index: 1;
-    top: 390px;
-    left: 600px; 
-  font-weight: 500;
+.h1{
+  position: absolute; /* Устанавливаем позиционирование как абсолютное */
+  top: 180px; /* Поднимаем текст выше на 20px относительно базовой точки */
   font-size: 25px;
-    }
-.h70{
-    position: absolute; /* Добавляем позиционирование абсолютное */
-      z-index: 1;
-      top: 490px;
-      left: 270px; 
-      font-weight: 600;
-      font-size: 25px;
+  left: 260px; 
 }
-.h80 {
-    position: absolute; /* Добавляем позиционирование абсолютное */
-    z-index: 1;
-    top: 490px;
-    left: 600px; 
-  font-weight: 500;
+.h2{
+  position: absolute; /* Устанавливаем позиционирование как абсолютное */
+  top: 180px; /* Поднимаем текст выше на 20px относительно базовой точки */
   font-size: 25px;
-    }
+  left: 460px; 
+}
+.h3{
+  position: absolute; /* Устанавливаем позиционирование как абсолютное */
+  top: 300px; /* Поднимаем текст выше на 20px относительно базовой точки */
+  font-size: 25px;
+  left: 260px; 
+}
+.h4{
+  position: absolute; /* Устанавливаем позиционирование как абсолютное */
+  top: 300px; /* Поднимаем текст выше на 20px относительно базовой точки */
+  font-size: 25px;
+  left: 600px; 
+}
+.h5{
+position: absolute; /* Устанавливаем позиционирование как абсолютное */
+top: 400px; /* Поднимаем текст выше на 20px относительно базовой точки */
+font-size: 25px;
+left: 260px; 
+}
+.h6{
+position: absolute; /* Устанавливаем позиционирование как абсолютное */
+top: 400px; /* Поднимаем текст выше на 20px относительно базовой точки */
+font-size: 25px;
+left: 450px; 
+}
+.h7{
+position: absolute; /* Устанавливаем позиционирование как абсолютное */
+top: 500px; /* Поднимаем текст выше на 20px относительно базовой точки */
+font-size: 25px;
+left: 260px;
+}
+.h8{
+position: absolute; /* Устанавливаем позиционирование как абсолютное */
+top: 500px; /* Поднимаем текст выше на 20px относительно базовой точки */
+font-size: 25px;
+left: 450px; 
+}
   
