@@ -35,7 +35,7 @@ function Home2() {
         <span className="arrow">&#9662;</span>
     </div>
     <div id="comboBoxPanel" className="comboBoxPanel">
-        <p className="Kyrs1" onClick={() => handleToggle('PanelKyrs1')}>
+    <p className="Kyrs1" onClick={() => handleToggle('PanelKyrs1')}>
             Курс 1
             <span className="arrow" onClick={(e) => { e.stopPropagation(); handleToggle('PanelKyrs1')}}>&#9662;</span>
         </p>
