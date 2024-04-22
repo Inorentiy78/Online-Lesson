@@ -36,16 +36,19 @@ function App() {
          <Router>
           <Routes>
             <Route exact path="/" element={<Home2 />} />
+             {/*<Route exact path="/" element={<Home1 />} openModal={openModal} onLoginClick={handleLoginClick} /> */}
             <Route path="/about-courses" element={<OKyrsah />} />
             <Route path="/contacts" element={<Contacts />} />
+            <Route path="/tests" element={<Test />} />
+            <Route path="/video" element={<Video/>} />
           </Routes>
-        </Router> 
-        {/*<Contacts/>*/}
+        </Router>
+        {/*<Zapisatsa/> 
+        <Contacts/>*/}
         {/* <DisRegistr handleLoginClick={handleLoginClick} />  
-        <Home1 openModal={openModal} onLoginClick={handleLoginClick} />
-      <Zapisatsa/>
-      {/*<Test/>
-       <Video/> */}
+      
+      {/*
+        */}
       </header>
     </div>
   );
