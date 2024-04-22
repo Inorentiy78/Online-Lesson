@@ -43,12 +43,9 @@ function App() {
             <Route path="/video" element={<Video/>} />
           </Routes>
         </Router>
-        {/*<Zapisatsa/> 
-        <Contacts/>*/}
-        {/* <DisRegistr handleLoginClick={handleLoginClick} />  
+        {/*<Zapisatsa/>*/}
+        {/* <DisRegistr handleLoginClick={handleLoginClick} />  */}
       
-      {/*
-        */}
       </header>
     </div>
   );
