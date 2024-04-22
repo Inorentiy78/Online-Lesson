@@ -1,0 +1,585 @@
+/*Home2.css*/
+.container00 {
+  position: absolute;
+  top: -6%; /* Можно регулировать в зависимости от того, насколько опустить окно */
+  transform: translateY(6%);
+  z-index: 100;
+}
+/* Главный экран */
+.main-screen0 {
+  position: relative;
+  width: 1014px;
+  height: 700px;
+  background: #FFFFFF;
+}
+
+/* Шапка */
+.header0 {
+  position: absolute;
+  width: 1014px;
+  height: 49px;
+  left: 0px;
+  top: 18px;
+}
+
+/* Кнопка "Войти" в шапке */
+.login-button-header0 {
+  position: absolute;
+  width: 86px;
+  height: 36px;
+  left: 888px;
+  top: 18px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Онлайн курсы */
+.online-courses0 {
+  position: absolute;
+  width: 160px;
+  height: 24px;
+  left: 60px;
+  top: -8px; 
+font-weight: 300; 
+font-size: 25px;
+
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Линия сверху */
+.line-top0 {
+  position: absolute;
+  width: 1479px;
+  height: 0px;
+  left: 0px;
+  top: 30px; /* Измените значение top на 30px или другое значение, которое соответствует вашим требованиям */
+  border: 1px solid #000000;
+}
+
+
+/* О курсах */
+.about-courses0 {
+  position: absolute;
+  width: 65px;
+  height: 18px;
+  left: 258px;
+  top: 1px;
+font-weight: 20; 
+
+  /* Добавьте остальные стили по желанию */
+}
+/* Контакты */
+.contacts0 {
+  position: absolute;
+  width: 67px;
+  height: 18px;
+  left: 372px;
+  top: 1px;
+font-weight: 20; 
+
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Карточки с языковыми */
+.language-cards0 {
+  position: absolute;
+  width: 646px;
+  height: 365px;
+  left: 303px;
+  top: 207px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Подробнее на карточке */
+.more-details0 {
+  position: absolute;
+  width: 70px;
+  height: 15px;
+  left: calc(50% - 70px/2 + 27px);
+  top: calc(50% - 15px/2 - 12.5px);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Испанский язык */
+.spanish-language0 {
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 150px;
+  top: 280px;
+  z-index: 2;
+  font-size: 20px;
+  /* Добавьте остальные стили по желанию */
+}
+/* Английский язык */
+.english-language0 {
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 150px;
+  top: 70px;
+  z-index: 2;
+  font-size: 20px;
+
+  /* Добавьте остальные стили по желанию */
+}
+/* Итальянский язык */
+.italian-language0 {
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 505px;
+  top: 70px;
+  z-index: 2;
+  font-size: 20px;
+
+  /* Добавьте остальные стили по желанию */
+}
+/*Казахский язык*/
+.kazakh-language0{
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 510px;
+  top: 280px;
+  z-index: 2;
+  font-size: 20px;
+
+}
+/*Китайский язык*/
+.chinese-language0{
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 510px;
+  top: 470px;
+  z-index: 2;
+  font-size: 20px;
+
+}
+/*Русский язык*/
+.russian-language0{
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 150px;
+  top: 470px;
+  z-index: 2;
+  font-size: 20px;
+
+}
+
+
+/* Дополнительные стили при наведении */
+.butt2 {
+  position: absolute;
+  left: 625px;
+  top: 370px;
+  background: #E04040;
+  border-radius: 15px;
+  z-index: 1; /* Поднимаем кнопку над остальным контентом */
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+
+
+/* .butt2.open {
+  /* Стили для открытого модального окна}  */
+
+
+/* Rectangle 3 Кит*/
+
+/*butt3 кит*/
+.butt3{
+  position: absolute;
+  left: 625px;
+  top: 580px;
+  background: #E04040;
+  border-radius: 15px;
+  z-index: 1;
+  border: 1px solid transparent; /* Добавляем прозрачную рамку */
+  color: #FFFFFF;
+  cursor: pointer;
+}
+/* Rectangle 4 Итал*/
+
+/*butt4 итал*/
+.butt4{
+  position: absolute;
+  left: 980px;
+  top: 370px;
+  background: #E04040;
+  border-radius: 15px;
+  z-index: 1;
+  border: 1px solid transparent; /* Добавляем прозрачную рамку */
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.butt5{
+  position: absolute;
+  left: 980px;
+  top: 775px;
+  background: #E04040;
+  border-radius: 15px;
+  z-index: 1;
+  border: 1px solid transparent; /* Добавляем прозрачную рамку */
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.butt6{
+  position: absolute;
+  left: 980px;
+  top: 580px;
+  background: #E04040;
+  border-radius: 15px;
+  z-index: 1;
+  border: 1px solid transparent; /* Добавляем прозрачную рамку */
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.butt7{
+  position: absolute;
+  left: 625px;
+  top: 775px;
+  background: #E04040;
+  border-radius: 15px;
+  z-index: 1;
+  border: 1px solid transparent; /* Добавляем прозрачную рамку */
+  color: #FFFFFF;
+}
+/* Rectangle 2 русс*/
+.rectangle-20 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 430px;
+  top: 650px;
+  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  z-index: 0;
+  /* Добавьте остальные стили по желанию */
+}
+/* Rectangle 3 Кит*/
+.rectangle-30 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 780px;
+  top: 650px;
+  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  z-index: 0;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Rectangle 4 Итал*/
+.rectangle-40 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 780px;
+  top: 250px;
+  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  z-index: 0;
+  /* Добавьте остальные стили по желанию */
+}
+/*butt4 итал*/
+
+/* Rectangle 5 Англ*/
+.rectangle-50 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 430px;
+  top: 250px;
+  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  z-index: 0;
+  /* Добавьте остальные стили по желанию */
+}
+/*butt5 англ*/
+
+/* Rectangle 6 Каз*/
+.rectangle-60 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 780px;
+  top: 460px;
+  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  z-index: 0;
+  /* Добавьте остальные стили по желанию */
+}
+/*butt6 каз*/
+
+/* Rectangle 7 Испан*/
+.rectangle-70 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 430px;
+  top: 460px;
+  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  z-index: 0;
+  /* Добавьте остальные стили по желанию */
+}
+/*butt7 испан*/
+
+/* Стили для списка языковых курсов */
+.language-courses-list0 {
+  position: absolute;
+  width: 647px;
+  height: 527px;
+  left: 102px;
+  top: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Увеличиваем пространство между элементами в списке */
+font-weight: 20; 
+
+}
+
+
+/* Линия */
+.line0 {
+  position: absolute;
+  width: 700px;
+  height: 0px;
+  left: 25px;
+  top: 570px;
+  border: 1px solid #000000;
+  transform: rotate(-90deg);
+  /* Добавьте остальные стили по желанию */
+}
+
+
+/* Стили для поискового поля */
+.input0 {
+position: absolute;
+width: 27%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 20px;
+box-sizing: border-box;
+margin-bottom: 10px;
+font-size: 14px;
+top: 160px;
+left: 90px;
+}
+
+
+
+/* Стили для кнопки "Найти" */
+.search-button0 {
+  position: absolute;
+  width: 77px;
+  height: 25px;
+  top: 170px;
+  left: 400px;
+  border-radius: 20px; /* Добавляем скругление углов для создания круглой кнопки */
+  background-color:#e04040; /* Цвет фона кнопки */
+  color: #ffffff; /* Цвет текста на кнопке */
+  font-size: 14px; /* Размер шрифта */
+  border: none; /* Убираем границу */
+  cursor: pointer; /* Изменяем курсор при наведении */
+  outline: none; /* Убираем обводку при фокусе */
+  transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+  display: flex; /* Устанавливаем контейнер в режиме flex */
+  align-items: center; /* Выравниваем элементы по вертикали */
+  justify-content: center; /* Выравниваем элементы по горизонтали */
+}
+
+/* Введите название курса */
+.course-input-label0 {
+  position: absolute;
+  width: 144px;
+  height: 15px;
+  left: 100px;
+  top: 1308px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #D6C7C7;
+  /* Добавьте остальные стили по желанию */
+}
+
+
+/* Стили для каждой кнопки (названия языка) */
+.language-card0 {
+  background-color: #f5f5f5; /* Цвет фона кнопки */
+  padding: 15px; /* Добавляем отступ внутри кнопки */
+  border-radius: 10px; /* Скругляем углы кнопки */
+  cursor: pointer; /* Изменяем курсор при наведении */
+  transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+  font-family: 'Inter', sans-serif; /* Изменяем шрифт на Inter */
+  font-weight: 300; /* Делаем шрифт более тонким */
+  font-size: 18px; /* Увеличиваем размер шрифта */
+}
+
+.language-card0:hover {
+  background-color: #e0e0e0; /* Изменяем цвет фона при наведении */
+}
+
+.nametext0{
+position: absolute;
+font-size: 20px;
+right: -400px;
+top: -8px;
+z-index: 1100;
+}
+
+.circle0 {
+position: absolute;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: #E87C7C;
+display: flex;
+justify-content: center;
+align-items: center;
+right: -455px;
+top: -14px;
+z-index: 1100;
+}
+
+.letter0{
+font-size: 24px;
+color: #FFFFFF;
+font-weight: bold;
+}
+
+.panel {
+position: fixed; /* Используем fixed, чтобы панель оставалась видимой при прокрутке страницы */
+top: 0;
+right: 0;
+width: 15%;
+height: 100%;
+background-color: rgba(248, 200, 200, 0.9); /* Пример цвета с прозрачностью */
+z-index: 1000; /* Поднимаем панель над остальными элементами */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.comboBoxHeader {
+position: fixed;
+cursor: pointer;
+padding: 10px;
+top: 50px;
+right: 90px;
+}
+
+/* Стили для стрелочки в заголовке панели "Мои курсы" */
+.arrow {
+float: right;
+}
+
+/* Стили для содержимого панели "Мои курсы" */
+.comboBoxPanel {
+position: absolute;
+display: none;
+width: 50%;
+z-index: 1000;
+top: 90px;
+right: 55px; 
+}
+
+/* Стили для отображения панели "Мои курсы" */
+.show {
+display: block;
+}
+
+/* Дополнительные стили для курсов */
+.comboBoxPanel p {
+margin: 5px 0;
+}
+/* Стили для комбо бокса Курса 1 */
+#course1Panel {
+display: none; /* По умолчанию скрыт */
+width: 50%; /* Занимает всю ширину панели */
+border-radius: 5px;
+z-index: 1000;
+margin-top: 10px; /* Отступ сверху для содержимого панели */
+top: -270px;
+right: 50px;
+}
+
+
+
+/* Стили для комбо бокса Курса 2 */
+#course2Panel {
+display: none; /* По умолчанию скрыт */
+width: 50%; /* Занимает всю ширину панели */
+border-radius: 5px;
+z-index: 1000;
+margin-top: 10px; /* Отступ сверху для содержимого панели */
+top: -270px;
+right: 50px;
+}
+
+/* Стили для отображения панели Курса 2 */
+#course2Panel.show {
+display: block;
+}
+
+/* Стили для комбо бокса Курса 3 */
+#course3Panel {
+display: none; /* По умолчанию скрыт */
+width: 50%; /* Занимает всю ширину панели */
+border-radius: 5px;
+z-index: 1000;
+margin-top: 10px; /* Отступ сверху для содержимого панели */
+top: -270px;
+right: 50px;
+}
+
+/* Стили для отображения панели Курса 3 */
+#course3Panel.show {
+display: block;
+}
+
+.PanelKyrs1,
+.PanelKyrs2,
+.PanelKyrs3 {
+display: none;
+top: 50px;
+right: 70px;
+}
+
+.PanelKyrs1.show,
+.PanelKyrs2.show,
+.PanelKyrs3.show {
+  right: 70px;
+display: block;
+}
+
+.arrow {
+cursor: pointer;
+}
