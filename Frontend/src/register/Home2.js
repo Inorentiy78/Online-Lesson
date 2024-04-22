@@ -1,9 +1,9 @@
 //Главный экран до геристрации
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './Home2.css'; // Подключаем файл стилей
-import './Podrobnee.css'; // Подключаем файл стилей
-import Podrobnee from './Podrobnee'; // Импортируем компонент модального окна
+import './Home2.css';
+import './Podrobnee.css';
+import Podrobnee from './Podrobnee';
 
 function Home2() {
     const [isPanelVisible, setPanelVisible] = useState(false);
@@ -71,24 +71,24 @@ function Home2() {
             <span className="arrow" onClick={(e) => { e.stopPropagation(); handleToggle('PanelKyrs1')}}>&#9662;</span>
         </p>
         <div id="PanelKyrs1" className="PanelKyrs1">
-            <p>тестовые задания</p>
-            <p>видео-уроки</p>
+        <p><Link to="/tests" className='test-link'>Тестовые задания</Link></p>
+        <p><Link to="/video" className='video-link'>видео-уроки</Link></p>
         </div>
         <p className="Kyrs2" onClick={() => handleToggle('PanelKyrs2')}>
             Курс 2
             <span className="arrow" onClick={(e) => { e.stopPropagation(); handleToggle('PanelKyrs2')}}>&#9662;</span>
         </p>
         <div id="PanelKyrs2" className="PanelKyrs2">
-            <p>тестовые задания</p>
-            <p>видео-уроки</p>
+        <p><Link to="/tests" className='test-link'>Тестовые задания</Link></p>
+        <p><Link to="/video" className='video-link'>видео-уроки</Link></p>
         </div>
         <p className="Kyrs3" onClick={() => handleToggle('PanelKyrs3')}>
             Курс 3
             <span className="arrow" onClick={(e) => { e.stopPropagation(); handleToggle('PanelKyrs3')}}>&#9662;</span>
         </p>
         <div id="PanelKyrs3" className="PanelKyrs3">
-            <p>тестовые задания</p>
-            <p>видео-уроки</p>
+        <p><Link to="/tests" className='test-link'>Тестовые задания</Link></p>
+        <p><Link to="/video" className='video-link'>видео-уроки</Link></p>
         </div>
     </div>
     {/* Добавьте другие пункты меню по желанию */}
