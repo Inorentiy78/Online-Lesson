@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Test.css'; // Подключаем файл стилей
 
 const Test = () => {
@@ -51,8 +52,8 @@ const Test = () => {
         <div>
             <div className="line-tops"></div>
                 <div className="online-coursess">Онлайн-курсы</div>
-                <div className="about-coursess">О курсах</div>
-                <div className="contactss">Контакты</div>
+                <Link to="/about-courses" className='about-courses0'>О курсах</Link>
+                <Link to="/contacts" className="contacts0">Контакты</Link>
                 <div className='nametexts'>Имя</div>
                 <div className="circles" onClick={togglePanel}>
                     <span className="letters">И</span>

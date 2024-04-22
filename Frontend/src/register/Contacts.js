@@ -1,5 +1,6 @@
 //экран контакты
 import React from 'react';
+import { Link } from 'react-router-dom';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import './Contacts.css'; // Подключаем файл стилей
 
@@ -10,8 +11,8 @@ function Contacts() {
             <div className="header2">
                 <div className="line-top2"></div>
                 <div className="online-courses2">Онлайн-курсы</div>
-                <div className="about-courses2">О курсах</div>
-                <div className="contacts2">Контакты</div>
+                <Link to="/about-courses" className='about-courses0'>О курсах</Link>
+                <Link to="/contacts" className="contacts0">Контакты</Link>
             </div>
             <div className='Zogolovok0'>Связаться с нами: </div>
             <div className="rectangle "></div>

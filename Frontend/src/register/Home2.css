@@ -443,56 +443,70 @@ left: 90px;
   background-color: #e0e0e0; /* Изменяем цвет фона при наведении */
 }
 
-.nametext0{
-position: absolute;
-font-size: 20px;
-right: -400px;
-top: -8px;
-z-index: 1100;
+.nametext0 {
+  position: fixed;
+  font-size: 20px;
+  right: 70px;
+  top: -8px;
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .circle0 {
-position: absolute;
-width: 40px;
-height: 40px;
-border-radius: 50%;
-background-color: #E87C7C;
-display: flex;
-justify-content: center;
-align-items: center;
-right: -455px;
-top: -14px;
-z-index: 1100;
+  position: relative; 
+  width: 40px;
+  height: 40px;
+  right: 30px;
+  top: 8px;
+  border-radius: 50%;
+  background-color: #E87C7C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Используем fixed, чтобы панель оставалась видимой при прокрутке страницы */
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.letter0{
-font-size: 24px;
-color: #FFFFFF;
-font-weight: bold;
+.letter0 {
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
 .panel {
-position: fixed; /* Используем fixed, чтобы панель оставалась видимой при прокрутке страницы */
-top: 0;
-right: 0;
-width: 15%;
-height: 100%;
-background-color: rgba(248, 200, 200, 0.9); /* Пример цвета с прозрачностью */
-z-index: 1000; /* Поднимаем панель над остальными элементами */
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 20px;
-box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%; /* Adjust width for mobile */
+  max-width: 300px; /* Set maximum width */
+  height: 100%;
+  background-color: rgba(248, 200, 200, 0.9);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .comboBoxHeader {
-position: relative;
-cursor: pointer;
-padding: 10px;
-top: -170px;
-right: 50px;
+  position: fixed; 
+  cursor: pointer;
+  padding: 10px;
+  top: 60px;
+  right: 110px;
 }
 
 /* Стили для стрелочки в заголовке панели "Мои курсы" */

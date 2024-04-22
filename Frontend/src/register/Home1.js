@@ -1,5 +1,6 @@
 //Главный экран до геристрации
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Home1.css'; // Подключаем файл стилей
 import './Podrobnee.css'; // Подключаем файл стилей
 import Podrobnee from './Podrobnee'; // Импортируем компонент модального окна
@@ -40,8 +41,8 @@ function Home1() {
             <div className="header">
                 <div className="line-top"></div>
                 <div className="online-courses">Онлайн-курсы</div>
-                <div className="about-courses">О курсах</div>
-                <div className="contacts">Контакты</div>
+                <Link to="/about-courses" className='about-courses0'>О курсах</Link>
+                <Link to="/contacts" className="contacts0">Контакты</Link>
                 
                 <div className="language-cards">
                     <div className="english-language">Английский язык</div>
