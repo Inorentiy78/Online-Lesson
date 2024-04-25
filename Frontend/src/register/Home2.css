@@ -583,3 +583,206 @@ display: block;
 .arrow {
 cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  .main-screen0 {
+    width: 100%;
+    height: auto;
+  }
+
+  .header0 {
+    width: 100%;
+  }
+
+  .line-top0 {
+    width: 1310px; 
+    height: 0px;
+    left: -50vw; 
+    top: 25px;
+    border: 1px solid #000000;
+  }
+
+  .online-courses0 {
+    left: 5%;
+    font-size: 15px;
+  }
+
+  .about-courses0 {
+    left: 40%;
+    font-size: 13px;
+  }
+
+  .contacts0 {
+    left: 60%;
+    font-size: 13px;
+  }
+
+  .language-courses-list {
+    width: 80%;
+    left: 10%;
+    top: 100px;
+    font-size: 12px;
+  }
+
+  .search-input {
+    width: 40%;
+    height: 50%;
+    top: 50px; 
+    left: 20px;
+    font-size: 11px;
+  }
+
+  .search-button {
+    width: 10%;
+    height: 40%; 
+    top: 53px; 
+    left: 165px;
+    font-size: 12px; 
+  }
+
+  .rectangle-20,
+  .rectangle-30,
+  .rectangle-40,
+  .rectangle-50,
+  .rectangle-60,
+  .rectangle-70 {
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    z-index: 0;
+    margin-bottom: 20px;
+  }
+
+  .spanish-language0 {
+    position: absolute;
+    width: 300px;
+    height: 155px;
+    left: 150px;
+    top: 280px;
+    z-index: 2;
+    font-size: 20px;
+  }
+
+  .english-language0 {
+    position: absolute;
+    width: 300px;
+    height: 155px;
+    left: 150px;
+    top: 70px;
+    z-index: 2;
+    font-size: 20px;
+  }
+
+  .italian-language0 {
+    position: absolute;
+    width: 300px;
+    height: 155px;
+    left: 505px;
+    top: 70px;
+    z-index: 2;
+    font-size: 20px;
+  }
+
+  .kazakh-language0{
+    position: absolute;
+    width: 300px;
+    height: 155px;
+    left: 510px;
+    top: 280px;
+    z-index: 2;
+    font-size: 20px;
+
+  }
+
+  .chinese-language0{
+    position: absolute;
+    width: 300px;
+    height: 155px;
+    left: 510px;
+    top: 470px;
+    z-index: 2;
+    font-size: 20px;
+
+  }
+
+  .russian-language0{
+    position: absolute;
+    width: 300px;
+    height: 155px;
+    left: 150px;
+    top: 470px;
+    z-index: 2;
+    font-size: 20px;
+  }
+
+  .language-cards0 {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .line {
+    width: 0px; 
+    height: 5000px; 
+    left: 48%; 
+    top: 27px; 
+    transform: rotate(0deg);
+    border: 1px solid white;
+  }
+
+  .butt2,
+  .butt3,
+  .butt4,
+  .butt5,
+  .butt6,
+  .butt7 {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+
+  .nametext0 {
+    font-size: 16px;
+    right: -5px;
+    top: -8px;
+    z-index: 1100;
+  }
+
+  .circle0 {
+    width: 30px;
+    height: 30px;
+    right: -40px;
+    top: -14px;
+    z-index: 1100;
+  }
+
+  .comboBoxHeader {
+    top: 20px;
+    right: 70px;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .comboBoxPanel {
+    width: 90%;
+    top: 60px;
+    right: 50px;
+  }
+
+  .PanelKyrs1,
+  .PanelKyrs2,
+  .PanelKyrs3 {
+    top: 50px;
+    right: 70px;
+  }
+
+  .arrow {
+    width: 10px;
+    height: 10px;
+  }
+}

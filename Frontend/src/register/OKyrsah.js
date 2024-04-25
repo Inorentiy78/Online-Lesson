@@ -1,5 +1,6 @@
 //Экран с инфой О курсах
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './OKyrsah.css'; // Подключаем файл стилей
 
 function OKyrsah() {
@@ -9,8 +10,8 @@ function OKyrsah() {
             <div className="header1">
                 <div className="line-top1"></div>
                 <div className="online-courses1">Онлайн-курсы</div>
-                <div className="about-courses1">О курсах</div>
-                <div className="contacts1">Контакты</div>
+                <Link to="/about-courses" className='about-courses1'>О курсах</Link>
+                         <Link to="/contacts" className="contacts1">Контакты</Link>
                 
         </div>
         <div className='Zogolovok'>Здесь вы можете узнать о наших курсах</div>
