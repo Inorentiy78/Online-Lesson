@@ -584,9 +584,16 @@ display: block;
 cursor: pointer;
 }
 
+.innerparts {
+  width: 1014px;
+  height: 49px;
+  left: 0px;
+  top: 18px;
+}
+
 @media only screen and (max-width: 768px) {
   body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
   }
 
   .main-screen0 {
@@ -630,93 +637,18 @@ cursor: pointer;
 
   .search-input {
     width: 40%;
-    height: 50%;
-    top: 50px; 
+    height: 5%;
+    top: 60px; 
     left: 20px;
     font-size: 11px;
   }
 
   .search-button {
     width: 10%;
-    height: 40%; 
-    top: 53px; 
+    height: 5%; 
+    top: 60px; 
     left: 165px;
     font-size: 12px; 
-  }
-
-  .rectangle-20,
-  .rectangle-30,
-  .rectangle-40,
-  .rectangle-50,
-  .rectangle-60,
-  .rectangle-70 {
-    width: 80%;
-    height: 100px;
-    border-radius: 10px;
-    z-index: 0;
-    margin-bottom: 20px;
-  }
-
-  .spanish-language0 {
-    position: absolute;
-    width: 300px;
-    height: 155px;
-    left: 150px;
-    top: 280px;
-    z-index: 2;
-    font-size: 20px;
-  }
-
-  .english-language0 {
-    position: absolute;
-    width: 300px;
-    height: 155px;
-    left: 150px;
-    top: 70px;
-    z-index: 2;
-    font-size: 20px;
-  }
-
-  .italian-language0 {
-    position: absolute;
-    width: 300px;
-    height: 155px;
-    left: 505px;
-    top: 70px;
-    z-index: 2;
-    font-size: 20px;
-  }
-
-  .kazakh-language0{
-    position: absolute;
-    width: 300px;
-    height: 155px;
-    left: 510px;
-    top: 280px;
-    z-index: 2;
-    font-size: 20px;
-
-  }
-
-  .chinese-language0{
-    position: absolute;
-    width: 300px;
-    height: 155px;
-    left: 510px;
-    top: 470px;
-    z-index: 2;
-    font-size: 20px;
-
-  }
-
-  .russian-language0{
-    position: absolute;
-    width: 300px;
-    height: 155px;
-    left: 150px;
-    top: 470px;
-    z-index: 2;
-    font-size: 20px;
   }
 
   .language-cards0 {
@@ -732,19 +664,162 @@ cursor: pointer;
     top: 27px; 
     transform: rotate(0deg);
     border: 1px solid white;
+    z-index: -1;
   }
 
-  .butt2,
-  .butt3,
-  .butt4,
-  .butt5,
-  .butt6,
-  .butt7 {
-    width: 60px;
-    height: 30px;
-    border-radius: 10px;
-    font-size: 12px;
+  .english-language {
+    width: 300px;
+    height: 155px;
+    left: -250px;
+    top: 70px;
+    z-index: 2;
+    font-size: 18px;
   }
+
+  .butt2 {
+    left: 210px;
+    top: 370px;
+    border-radius: 15px;
+    z-index: 1; 
+  }
+
+  .rectangle-5 {
+    width: 300px;
+    height: 155px;
+    left: 10px;
+    top: 250px;
+    border-radius: 15px;
+    z-index: 0;
+  }
+
+  .spanish-language {
+    width: 300px;
+    height: 155px;
+    left: -250px;
+    top: 280px;
+    z-index: 2;
+    font-size: 18px;
+  }
+
+  .butt3{
+    left: 210px;
+    top: 580px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+
+  .rectangle-7 {
+    width: 300px;
+    height: 155px;
+    left: 10px;
+    top: 460px;
+    border-radius: 15px;
+    z-index: 0;
+  }
+
+  .italian-language {
+    width: 300px;
+    height: 155px;
+    left: -250px;
+    top: 470px;
+    z-index: 2;
+    font-size: 18px;
+  }
+
+  .butt4{
+    left: 210px;
+    top: 775px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+
+  .rectangle-4 {
+    width: 300px;
+    height: 155px;
+    left: 10px;
+    top: 1460px;
+    border-radius: 15px;
+    z-index: 0;
+  }
+
+  .kazakh-language{
+    width: 300px;
+    height: 155px;
+    left: -250px;
+    top: 780px;
+    z-index: 2;
+    font-size: 18px;
+  }
+
+  .butt6{
+    left: 210px;
+    top: 1075px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+
+  .rectangle-6 {
+    width: 300px;
+    height: 155px;
+    left: 10px;
+    top: 960px;
+    border-radius: 15px;
+    z-index: 0;
+  }
+
+  .chinese-language{
+    width: 300px;
+    height: 155px;
+    left: -250px;
+    top: 1270px;
+    z-index: 2;
+    font-size: 18px;
+  }
+
+  .butt5{
+    left: 210px;
+    top: 1575px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+
+  .russian-language{
+    width: 300px;
+    height: 155px;
+    left: 150px;
+    top: 470px;
+    z-index: 2;
+    font-size: 18px;
+  }
+
+  
+  
+  .butt7{
+    left: 625px;
+    top: 775px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+
+  .rectangle-2 {
+    width: 300px;
+    height: 155px;
+    left: 430px;
+    top: 650px;
+    border-radius: 15px;
+    z-index: 0;
+  }
+
+  .rectangle-3 {
+    width: 300px;
+    height: 155px;
+    left: 10px;
+    top: 650px;
+    border-radius: 15px;
+    z-index: 0;
+  }
+
+  
 
   .nametext0 {
     font-size: 16px;

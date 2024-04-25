@@ -59,6 +59,7 @@ function Home2() {
                           <div className="circle0" onClick={togglePanel}>
                             <span className="letter0">И</span>
                          </div> 
+                     </div>
                          {isPanelVisible && (
   <div className={isPanelVisible ? "panel visible" : "panel"}>
     <div className="comboBoxHeader" onClick={() => handleToggle('comboBoxPanel')}>
@@ -103,6 +104,7 @@ function Home2() {
                     <div className="chinese-language">Китайский язык</div>
                     <div className="russian-language">Русский язык</div>
                 </div>
+                <div classname="innerparts">
                
                 <input type="text" className="search-input" placeholder="Введите название курса..." />
     
