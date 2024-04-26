@@ -1,33 +1,32 @@
-/*  */
 .page-container {
-  width: 100%;
+  width: 0%;
   max-width: 1200px; /* Пример значения для максимальной ширины */
   margin: 0 auto; /* Центрирование страницы */
   padding: 20px; /* Добавление отступов для контента */
 }
+
 .login {
   width: 40%;
   padding: 30px;
   border-radius: 50px;
   margin: 50px auto; /* Центрируем блок по вертикали и горизонтали */
   z-index: 1000;
+  position: relative; /* Добавляем позиционирование */
 }
 
-.login input {
-  width: 50%;
-  margin: 20px auto; /* Отступ сверху 20px, автоматический отступ по горизонтали */
+.login-input {
+  width: 80%;
   display: block;
   padding: 10px;
   border: 1px solid black;
   border-radius: 50px;
   box-sizing: border-box;
-  z-index: 1000;
-
+  margin: 10px 0; /* Отступы сверху и снизу для инпутов */
 }
 
- .login button {
-  width: 50%;
-  margin: 20px auto; /* Отступ сверху 20px, автоматический отступ по горизонтали */
+.loginbutton {
+  width: 80%;
+  margin: 30px 0;
   display: block;
   padding: 10px;
   background-color: #E04040;
@@ -36,21 +35,30 @@
   border-radius: 10px;
   cursor: pointer;
   box-sizing: border-box;
-  z-index: 1000;
-
-} 
+}
 
 .login-button {
-  width: 5%;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  position: fixed; /* Позиционирование фиксированное */
+  top: 10px; /* Расстояние от верхнего края экрана */
+  right: 60px; /* Расстояние от правого края экрана */
   background: #E04040;
-  color: #FFFFFF; 
+  color: #FFFFFF;
   border: none;
-  border-radius: 10px; 
-  padding: 7px 17px; 
-  font-size: 16px; 
+  border-radius: 10px;
+  padding: 7px 17px;
+  font-size: 16px;
   cursor: pointer;
+}
 
+.login-panel {
+  position: absolute;
+  top: 55%;
+  left: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px; /* Уменьшаем внутренние отступы для компактного вида */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  max-width: 400px; /* Максимальная ширина панели */
+  width: 30%; /* Ширина панели занимает всю доступную ширину */
 }
