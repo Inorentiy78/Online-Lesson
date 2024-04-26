@@ -41,7 +41,7 @@ const Header = () => {
     return (
         <div className="header">
             <div className="line-top"></div>
-            <div className="online-courses">Онлайн-курсы</div>
+            <Link to="/" className="online-courses">Онлайн курсы</Link>
             <Link to="/about-courses" className='about-courses'>О курсах</Link>
             <Link to="/contacts" className="contacts">Контакты</Link>
             {isLoggedIn ? (
@@ -82,7 +82,6 @@ const Header = () => {
         <p><Link to="/video" className='video-link'>видео-уроки</Link></p>
         </div>
     </div>
-    {/* Добавьте другие пункты меню по желанию */}
   </div>
 )}
                 </>
