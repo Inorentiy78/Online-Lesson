@@ -1,31 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Podrobnee.css';
 import Zapisatsa from './Zapisatsa';
 
-function Podrobnee({ isOpen, language }) {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+function Podrobnee({ isOpen, language, onClose }) {
     const [isZapisatsaOpen, setIsZapisatsaOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(isOpen);
+
 
     const handleOpenZapisatsa = () => {
         setIsZapisatsaOpen(true);
     };
-    
 
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            const modalContainer = document.querySelector('.modal-container0');
+            if (modalContainer && !modalContainer.contains(event.target)) {
+                onClose();
+            }
+        };
+
+        if (isOpen) {
+            document.addEventListener('click', handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, [isOpen, onClose]);
+
+    if (!isOpen) return null;
+    
     const handleCloseModal = () => {
         setIsModalOpen(false);
-        setIsZapisatsaOpen(false);
+        onClose();
     };
 
-    if (!isOpen) return null;
-
-    const handleOpenModal = () => {
-        setIsModalOpen(true);
-        console.log('Кнопка "Записаться на курс" нажата');
-    };
-
-    if (!isOpen) return null;
-
-    return (
+    return(
         <div className='container0'>
             <div className="rectangle0"></div>
             <div className='nazvanie'>{language}</div> 
@@ -38,6 +48,7 @@ function Podrobnee({ isOpen, language }) {
             <div className='text3'> Стоимость обучения: </div>
             <div className='text4'> 15.000 тенге/месяц </div>
             <button className="buttt" onClick={handleOpenZapisatsa}>Записаться на курс</button>
+            <button className="butt55" onClick={handleCloseModal}> &#10006;</button>
             {isZapisatsaOpen && <Zapisatsa onClose={() => setIsZapisatsaOpen(false)} />}
         </div>
     );
