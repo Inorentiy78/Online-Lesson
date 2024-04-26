@@ -1,0 +1,126 @@
+/*Podrobnee.css*/
+.container00 {
+    position: relative;
+}
+
+.modal-container0 {
+    width: 10%;
+    height: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 15px;
+    z-index: 1001;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* Добавляем стиль для закрытия модального окна при клике за его пределами */
+.overlay.active:hover {
+    display: none;
+}
+
+
+.modal-content0 {
+    /* Сделаем текст выровненным по центру */
+    text-align: center;
+}
+
+.close-button0 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+
+.rectangle0 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    left: 300px;
+    top: 100px;
+    background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    z-index: 1000;
+    /* Добавьте остальные стили по желанию */
+}
+
+.nazvanie,
+.text1,
+.text2,
+.text3,
+.text4 {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 200;
+    z-index: 1000;
+    width: 100%; /* Добавлено */
+}
+
+.nazvanie {
+    top: 120px;
+    left: 350px;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.text1 {
+    top: 170px;
+    left: 320px;
+    height: 10%; /* Уменьшено значение */
+}
+
+.text2 {
+    top: 281px;
+    left: 320px;
+    /* width: 100%; Закомментировано */
+}
+
+.text3 {
+    top: 450px;
+    left: 350px;
+    font-weight: 600;
+    /* width: 100%; Закомментировано */
+    height: -10%; /* Уменьшено значение */
+}
+
+.text4 {
+    top: 450px;
+    left: 640px;
+    /* width: 100%; Закомментировано */
+}
+
+.buttt {
+    width: 180px;
+    height: 25px;
+    left: 880px;
+    top: 540px;
+    background: #E04040;
+    border-radius: 15px;
+    z-index: 1000;
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    position: absolute;
+}

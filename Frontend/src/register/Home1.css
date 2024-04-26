@@ -1,0 +1,386 @@
+/*Home1.css
+.container {
+  position: absolute;
+  z-index: 100;
+  /* Другие стили остаются неизменными 
+}*/
+
+ 
+/* Главный экран */
+.main-screen {
+  position: relative;
+  width: 1014px;
+  height: 700px;
+  background: #FFFFFF;
+}
+
+
+/* Карточки с языковыми */
+.language-cards {
+  position: absolute;
+  width: 646px;
+  height: 365px;
+  left: 303px;
+  top: 207px;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Подробнее на карточке */
+.more-details {
+  position: absolute;
+  width: 70px;
+  height: 15px;
+  left: calc(50% - 70px/2 + 27px);
+  top: calc(50% - 15px/2 - 12.5px);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Испанский язык */
+.spanish-language {
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 150px;
+  top: 280px;
+  z-index: 1;
+  font-size: 20px;
+  /* Добавьте остальные стили по желанию */
+}
+/* Английский язык */
+.english-language {
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 150px;
+  top: 70px;
+  z-index: 1;
+  font-size: 20px;
+
+  /* Добавьте остальные стили по желанию */
+}
+/* Итальянский язык */
+.italian-language {
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 505px;
+  top: 70px;
+  z-index: 1;
+  font-size: 20px;
+
+  /* Добавьте остальные стили по желанию */
+}
+/*Казахский язык*/
+.kazakh-language{
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 510px;
+  top: 280px;
+  z-index: 1;
+  font-size: 20px;
+
+}
+/*Китайский язык*/
+.chinese-language{
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 510px;
+  top: 470px;
+  z-index: 1;
+  font-size: 20px;
+
+}
+/*Русский язык*/
+.russian-language{
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 150px;
+  top: 470px;
+  z-index: 1;
+  font-size: 20px;
+
+}
+
+
+/* Rectangle 2 русс*/
+.rectangle-2 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 430px;
+  top: 650px;
+  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  z-index: 0;
+  /* Добавьте остальные стили по желанию */
+}
+/*butt2 */
+.rectangle-3 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 780px;
+  top: 650px;
+  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  z-index: 0;
+  /* Добавьте остальные стили по желанию */
+}
+.rectangle-4 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 780px;
+  top: 250px;
+  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  z-index: 0;
+  /* Добавьте остальные стили по желанию */
+}
+
+
+
+/* Дополнительные стили при наведении */
+.butt2 {
+  position: absolute;
+  left: 625px;
+  top: 370px;
+  background: #E04040;
+  border-radius: 15px;
+  z-index: 1; /* Поднимаем кнопку над остальным контентом */
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+
+
+/* .butt2.open {
+  /* Стили для открытого модального окна}  */
+
+
+/* Rectangle 3 Кит*/
+
+/*butt3 кит*/
+.butt3{
+  position: absolute;
+  left: 625px;
+  top: 580px;
+  background: #E04040;
+  border-radius: 15px;
+  z-index: 1;
+  border: 1px solid transparent; /* Добавляем прозрачную рамку */
+  color: #FFFFFF;
+  cursor: pointer;
+}
+/* Rectangle 4 Итал*/
+
+/*butt4 итал*/
+.butt4{
+  position: absolute;
+  left: 980px;
+  top: 370px;
+  background: #E04040;
+  border-radius: 15px;
+  z-index: 1;
+  border: 1px solid transparent; /* Добавляем прозрачную рамку */
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.butt5{
+  position: absolute;
+  left: 980px;
+  top: 775px;
+  background: #E04040;
+  border-radius: 15px;
+  z-index: 1;
+  border: 1px solid transparent; /* Добавляем прозрачную рамку */
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.butt6{
+  position: absolute;
+  left: 980px;
+  top: 580px;
+  background: #E04040;
+  border-radius: 15px;
+  z-index: 1;
+  border: 1px solid transparent; /* Добавляем прозрачную рамку */
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.butt7{
+  position: absolute;
+  left: 625px;
+  top: 775px;
+  background: #E04040;
+  border-radius: 15px;
+  z-index: 1;
+  border: 1px solid transparent; /* Добавляем прозрачную рамку */
+  color: #FFFFFF;
+}
+/* Rectangle 5 Англ*/
+.rectangle-5 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 430px;
+  top: 250px;
+  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  z-index: 0;
+  /* Добавьте остальные стили по желанию */
+}
+/*butt5 англ*/
+
+/* Rectangle 6 Каз*/
+.rectangle-6 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 780px;
+  top: 460px;
+  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  z-index: 0;
+  /* Добавьте остальные стили по желанию */
+}
+/*butt6 каз*/
+
+/* Rectangle 7 Испан*/
+.rectangle-7 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 155px;
+  left: 430px;
+  top: 460px;
+  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  z-index: 0;
+  /* Добавьте остальные стили по желанию */
+}
+/*butt7 */
+
+/* Стили для списка языковых курсов */
+.language-courses-list {
+  position: absolute;
+  width: 647px;
+  height: 527px;
+  left: 102px;
+  top: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Увеличиваем пространство между элементами в списке */
+  font-weight: 20; 
+
+}
+
+
+/* Линия */
+.line {
+  position: absolute;
+  width: 700px;
+  height: 0px;
+  left: 25px;
+  top: 570px;
+  border: 1px solid #000000;
+  transform: rotate(-90deg);
+  /* Добавьте остальные стили по желанию */
+}
+
+
+/* Стили для поискового поля */
+.search-input {
+  position: absolute;
+  width: 27%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 14px;
+  top: 160px;
+  left: 90px;
+}
+
+
+
+/* Стили для кнопки "Найти" */
+.search-button {
+  position: absolute;
+  width: 77px;
+  height: 25px;
+  top: 170px;
+  left: 400px;
+  border-radius: 20px; /* Добавляем скругление углов для создания круглой кнопки */
+  background-color:#e04040; /* Цвет фона кнопки */
+  color: #ffffff; /* Цвет текста на кнопке */
+  font-size: 14px; /* Размер шрифта */
+  border: none; /* Убираем границу */
+  cursor: pointer; /* Изменяем курсор при наведении */
+  outline: none; /* Убираем обводку при фокусе */
+  transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+  display: flex; /* Устанавливаем контейнер в режиме flex */
+  align-items: center; /* Выравниваем элементы по вертикали */
+  justify-content: center; /* Выравниваем элементы по горизонтали */
+}
+
+/* Введите название курса */
+.course-input-label {
+  position: absolute;
+  width: 144px;
+  height: 15px;
+  left: 100px;
+  top: 1308px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #D6C7C7;
+  /* Добавьте остальные стили по желанию */
+}
+
+
+/* Стили для каждой кнопки (названия языка) */
+.language-card {
+  background-color: #f5f5f5; /* Цвет фона кнопки */
+  padding: 15px; /* Добавляем отступ внутри кнопки */
+  border-radius: 10px; /* Скругляем углы кнопки */
+  cursor: pointer; /* Изменяем курсор при наведении */
+  transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+  font-family: 'Inter', sans-serif; /* Изменяем шрифт на Inter */
+  font-weight: 300; /* Делаем шрифт более тонким */
+  font-size: 18px; /* Увеличиваем размер шрифта */
+}
+
+.language-card:hover {
+  background-color: #e0e0e0; /* Изменяем цвет фона при наведении */
+}
+a {
+  text-decoration: none;
+}
+a.hover{
+  color: #E04040;
+}
