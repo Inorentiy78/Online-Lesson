@@ -44,24 +44,23 @@ function DisRegistr() {
     }
   };
   useEffect(() => {
-    // Обработчик клика на весь документ
-    const handleClickOutside = (event) => {
-      const panel = document.getElementById('loginPanel');
-      if (panel && !panel.contains(event.target)) {
-        setPanelVisible(false);
-      }
+    const handleClick = (event) => {
+        const panel = document.querySelector('.login-panel');
+        const loginButton = document.querySelector('.login-button');
+        if (panel && loginButton && loginButton.contains(event.target)) {
+            setPanelVisible(true); // Open the login panel if the login button is clicked
+        } else if (panel && !panel.contains(event.target)) {
+            setPanelVisible(false); // Close the login panel if clicked outside
+        }
     };
 
-    // Добавляем обработчик только при открытой панели
-    if (isPanelVisible) {
-      document.addEventListener('click', handleClickOutside);
-    }
+    document.addEventListener('click', handleClick);
 
-    // Очищаем обработчик при размонтировании компонента или закрытии панели
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+        document.removeEventListener('click', handleClick);
     };
-  }, [isPanelVisible]);
+}, [isPanelVisible, view]);
+
 
   return (
     <div className="App">
