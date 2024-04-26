@@ -32,6 +32,7 @@ function App() {
     <div className="App">
       <header className="App-header">
          <Podrobnee isOpen={modalOpen} onClose={closeModal} language={selectedLanguage} />
+         
          <Router>
           <Routes>
          {/*<Route exact path="/" element={<Home2 />} />*/}
