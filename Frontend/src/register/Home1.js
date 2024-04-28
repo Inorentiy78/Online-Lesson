@@ -61,12 +61,12 @@ function Home1() {
                <Cards title="Испанский язык" onClick={() => openModal('Испанский язык')}/>
                <Cards title="Итальянский язык" onClick={() => openModal('Итальянский язык')}/>
                     </div>
-               <div className='card-column2'>
+                    <div className='card-column2'>
                <Cards title="Казахский язык" onClick={() => openModal('Казахский язык')}/>
                <Cards title="Китайский язык" onClick={() => openModal('Китайский язык')}/>
                <Cards title="Русский язык" onClick={() => openModal('Русский язык')}/>
                     </div>
-                </div>
+                  </div>
 
                 <div className="line"></div>
                 

@@ -1,201 +1,202 @@
-
 .header{
-    position: absolute;
-    width: 1014px;
-    height: 49px;
-    left: 0px;
-    top: 18px;
-  }
-  
-  /* Онлайн курсы */
-  .online-courses {
-    position: absolute;
-    width: 160px;
-    height: 24px;
-    left: 60px;
-    top: -8px; 
+  position: absolute;
+  width: 60%;
+  height: 49px;
+  top: 18px;
+}
+
+/* Онлайн курсы */
+.online-courses {
+  position: absolute;
+  width: 160px;
+  height: 24px;
+  left: 60px;
+  top: -8px; 
   font-weight: 300; 
   font-size: 25px;
+
+  /* Добавьте остальные стили по желанию */
+}
+
+/* Линия сверху */
+.line-top{
+  position: absolute;
+  width: 166%;
+  height: 0px;
+  top: 30px; /* Измените значение top на 30px или другое значение, которое соответствует вашим требованиям */
+  border: 1px solid #000000;
+}
   
-    /* Добавьте остальные стили по желанию */
+@media (max-width: 768px) {
+  .line-top {
+    width: 1000%;
+    
   }
-  
-  /* Линия сверху */
-  .line-top{
-    position: absolute;
-    width: 1479px;
-    height: 0px;
-    left: 0px;
-    top: 30px; /* Измените значение top на 30px или другое значение, которое соответствует вашим требованиям */
-    border: 1px solid #000000;
-  }
-  
-  
+}
+
   /* О курсах */
-  .about-courses {
-    position: absolute;
-    width: 65px;
-    height: 18px;
-    left: 258px;
-    top: 1px;
+.about-courses {
+  position: absolute;
+  width: 65px;
+  height: 18px;
+  left: 258px;
+  top: 1px;
   font-weight: 20; 
   
     /* Добавьте остальные стили по желанию */
-  }
-  /* Контакты */
+}
+/* Контакты */
 .contacts{
-    position: absolute;
-    width: 67px;
-    height: 18px;
-    left: 372px;
-    top: 1px;
+  position: absolute;
+  width: 67px;
+  height: 18px;
+  left: 372px;
+  top: 1px;
   font-weight: 20; 
-  
-    /* Добавьте остальные стили по желанию */
-  }
+
+  /* Добавьте остальные стили по желанию */
+}
   
 .nametext0{
-    position: absolute;
-    font-size: 20px;
-    right: -400px;
-    top: -8px;
-    z-index: 1100;
-    }
+  position: absolute;
+  font-size: 20px;
+  right: -400px;
+  top: -8px;
+  z-index: 1100;
+}
     
-    .circle0 {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #E87C7C;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: -455px;
-    top: -14px;
-    z-index: 1100;
-    }
-    
-    .letter0{
-    font-size: 24px;
-    color: #FFFFFF;
-    font-weight: bold;
-    }
-    
-    .panel {
-    position: fixed; /* Используем fixed, чтобы панель оставалась видимой при прокрутке страницы */
-    top: 0;
-    right: 0;
-    width: 15%;
-    height: 100%;
-    background-color: rgba(248, 200, 200, 0.9); /* Пример цвета с прозрачностью */
-    z-index: 1000; /* Поднимаем панель над остальными элементами */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    }
-    
-    .comboBoxHeader {
-    position: fixed;
-    cursor: pointer;
-    padding: 10px;
-    top: 50px;
-    right: 90px;
-    }
-    
-    /* Стили для стрелочки в заголовке панели "Мои курсы" */
-    .arrow {
-    float: right;
-    }
-    
-    /* Стили для содержимого панели "Мои курсы" */
-    .comboBoxPanel {
-    position: absolute;
-    display: none;
-    width: 50%;
-    z-index: 1000;
-    top: 90px;
-    right: 55px; 
-    }
-    
-    /* Стили для отображения панели "Мои курсы" */
-    .show {
-    display: block;
-    }
-    
-    /* Дополнительные стили для курсов */
-    .comboBoxPanel p {
-    margin: 5px 0;
-    }
-    /* Стили для комбо бокса Курса 1 */
-    #course1Panel {
-    display: none; /* По умолчанию скрыт */
-    width: 50%; /* Занимает всю ширину панели */
-    border-radius: 5px;
-    z-index: 1000;
-    margin-top: 10px; /* Отступ сверху для содержимого панели */
-    top: -270px;
-    right: 50px;
-    }
-    
-    
-    
-    /* Стили для комбо бокса Курса 2 */
-    #course2Panel {
-    display: none; /* По умолчанию скрыт */
-    width: 50%; /* Занимает всю ширину панели */
-    border-radius: 5px;
-    z-index: 1000;
-    margin-top: 10px; /* Отступ сверху для содержимого панели */
-    top: -270px;
-    right: 50px;
-    }
-    
-    /* Стили для отображения панели Курса 2 */
-    #course2Panel.show {
-    display: block;
-    }
-    
-    /* Стили для комбо бокса Курса 3 */
-    #course3Panel {
-    display: none; /* По умолчанию скрыт */
-    width: 50%; /* Занимает всю ширину панели */
-    border-radius: 5px;
-    z-index: 1000;
-    margin-top: 10px; /* Отступ сверху для содержимого панели */
-    top: -270px;
-    right: 50px;
-    }
-    
-    /* Стили для отображения панели Курса 3 */
-    #course3Panel.show {
-    display: block;
-    }
-    
-    .PanelKyrs1,
-    .PanelKyrs2,
-    .PanelKyrs3 {
-    display: none;
-    top: 50px;
-    right: 70px;
-    }
-    
-    .PanelKyrs1.show,
-    .PanelKyrs2.show,
-    .PanelKyrs3.show {
-      right: 70px;
-    display: block;
-    }
-    
-    .arrow {
-    cursor: pointer;
-    }
-    a {
-      text-decoration: none;
-    }
-    a.hover{
-      color: #E04040;
-    }
+.circle0 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #E87C7C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -455px;
+  top: -14px;
+  z-index: 1100;
+}
+
+.letter0{
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.panel {
+  position: fixed; /* Используем fixed, чтобы панель оставалась видимой при прокрутке страницы */
+  top: 0;
+  right: 0;
+  width: 15%;
+  height: 100%;
+  background-color: rgba(248, 200, 200, 0.9); /* Пример цвета с прозрачностью */
+  z-index: 1000; /* Поднимаем панель над остальными элементами */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.comboBoxHeader {
+  position: fixed;
+  cursor: pointer;
+  padding: 10px;
+  top: 50px;
+  right: 90px;
+}
+
+/* Стили для стрелочки в заголовке панели "Мои курсы" */
+.arrow {
+  float: right;
+}
+
+/* Стили для содержимого панели "Мои курсы" */
+.comboBoxPanel {
+  position: absolute;
+  display: none;
+  width: 50%;
+  z-index: 1000;
+  top: 90px;
+  right: 55px; 
+}
+
+/* Стили для отображения панели "Мои курсы" */
+.show {
+  display: block;
+}
+
+/* Дополнительные стили для курсов */
+.comboBoxPanel p {
+  margin: 5px 0;
+}
+/* Стили для комбо бокса Курса 1 */
+#course1Panel {
+  display: none; /* По умолчанию скрыт */
+  width: 50%; /* Занимает всю ширину панели */
+  border-radius: 5px;
+  z-index: 1000;
+  margin-top: 10px; /* Отступ сверху для содержимого панели */
+  top: -270px;
+  right: 50px;
+}
+
+/* Стили для комбо бокса Курса 2 */
+#course2Panel {
+  display: none; /* По умолчанию скрыт */
+  width: 50%; /* Занимает всю ширину панели */
+  border-radius: 5px;
+  z-index: 1000;
+  margin-top: 10px; /* Отступ сверху для содержимого панели */
+  top: -270px;
+  right: 50px;
+}
+
+/* Стили для отображения панели Курса 2 */
+#course2Panel.show {
+  display: block;
+}
+
+/* Стили для комбо бокса Курса 3 */
+#course3Panel {
+  display: none; /* По умолчанию скрыт */
+  width: 50%; /* Занимает всю ширину панели */
+  border-radius: 5px;
+  z-index: 1000;
+  margin-top: 10px; /* Отступ сверху для содержимого панели */
+  top: -270px;
+  right: 50px;
+}
+
+/* Стили для отображения панели Курса 3 */
+#course3Panel.show {
+  display: block;
+}
+
+.PanelKyrs1,
+.PanelKyrs2,
+.PanelKyrs3 {
+  display: none;
+  top: 50px;
+  right: 70px;
+}
+
+.PanelKyrs1.show,
+.PanelKyrs2.show,
+.PanelKyrs3.show {
+  right: 70px;
+  display: block;
+}
+
+.arrow {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+a.hover{
+  color: #E04040;
+}

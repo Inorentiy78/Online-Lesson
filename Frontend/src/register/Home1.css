@@ -1,19 +1,9 @@
-/*Home1.css
-.container {
-  position: absolute;
-  z-index: 100;
-  /* Другие стили остаются неизменными 
-}*/
-
- 
 /* Главный экран */
 .main-screen {
   position: relative;
   width: 1014px;
   height: 700px;
-  background: #FFFFFF;
 }
-
 
 /* Карточки с языковыми */
 .language-cards {
@@ -107,84 +97,54 @@
   top: 470px;
   z-index: 1;
   font-size: 20px;
-
 }
-
 
 .asd {
   display: flex;
   justify-content: space-between; 
-  flex-direction: column;
   position: center;
 }
 
 .card-column1 {
   display: flex;
-  flex-basis: 70%;
-  margin: 40px;
-  margin-bottom: -1050px;
+  flex-basis: 461px; /* Adjust the width to 461px */
+  height: 531px; /* Adjust the height to 531px */
   flex-direction: column; 
-  margin-left: 900px;
+  margin-left: 500px;
+  margin-top: -28%;
 }
 
 .card-column2 {
   display: flex;
-  flex-basis: 70%; 
-  margin: 40px;
-  margin-bottom: 900px;
+  flex-basis: 861px; /* Adjust the width to 461px */
+  height: 531px; /* Adjust the height to 531px */
   flex-direction: column; 
-  margin-left: 500px;
+  margin-top: -28%;
 }
 
 /* Медиазапрос для мобильных устройств */
-@media (max-width: 768px) {
+@media (max-width: 360px) {
+  .main-screen {
+    width: 50%;
+  }
+
   .asd {
     justify-content: center; /* Центрирование элементов по горизонтали на мобильных устройствах */
+    flex-direction: column;
   }
 
   .card-column1,
   .card-column2 {
-    flex-basis: 100%; /* 100% ширины на мобильных устройствах */
-    margin: 10px; /* Меньший отступ на мобильных устройствах */
-    margin-left: 0; /* Удаление левого отступа на мобильных устройствах */
+    flex-basis: 50%; /* Adjust flex-basis to your preference */
+    margin: 10px; /* Adjust margin as needed */
+    flex-direction: column;
   }
 }
-
-/* .asd {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: -200px;
-  flex-direction: column;
-}
-
-.card-column1,
-.card-column2 {
-  display: flex;
-  flex-basis: 45%;
-  margin: 10px;
-  flex-direction: column;
-
-} */
-
-/* .asd {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  margin-left: 600px
-}
-
-.card-column {
-  display: flex;
-  flex-basis: 70%; 
-  margin: 40px;
-} */
-
-/*butt7 */
 
 /* Стили для списка языковых курсов */
 .language-courses-list {
   position: absolute;
-  width: 647px;
+  width: 35%;
   height: 527px;
   left: 102px;
   top: 250px;
@@ -192,9 +152,7 @@
   flex-direction: column;
   gap: 5px; /* Увеличиваем пространство между элементами в списке */
   font-weight: 20; 
-
 }
-
 
 /* Линия */
 .line {
@@ -207,7 +165,6 @@
   transform: rotate(-90deg);
   /* Добавьте остальные стили по желанию */
 }
-
 
 /* Стили для поискового поля */
 .search-input {
@@ -222,8 +179,6 @@
   top: 160px;
   left: 90px;
 }
-
-
 
 /* Стили для кнопки "Найти" */
 .search-button {
@@ -282,4 +237,18 @@ a {
 }
 a.hover{
   color: #E04040;
+}
+
+@media (max-width: 280px) {
+  .search-input {
+    display: flex;
+  }
+  
+  .search-button {
+    display: flex;
+  }
+
+  .language-courses-list {
+    width: 100%; /* Adjust width for smaller screens */
+  }
 }
