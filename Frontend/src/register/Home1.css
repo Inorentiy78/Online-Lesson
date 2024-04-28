@@ -252,3 +252,22 @@ a.hover{
     width: 100%; /* Adjust width for smaller screens */
   }
 }
+.no-results {
+  position: absolute;
+  top: -5%; /* Поднимаем элемент на 50% относительно своей высоты */
+  left: 18%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 120%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 999;
+}
+@media only screen and (max-width: 700px) {
+  .no-results {
+    font-size: 100%; /* Уменьшаем размер шрифта для мобильных устройств */
+    left: 10%; /* Изменяем отступ слева для центрирования */
+    top: -3%; /* Изменяем вертикальный отступ для центрирования */
+  }
+}
