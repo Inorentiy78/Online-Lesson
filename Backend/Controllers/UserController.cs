@@ -1,137 +1,115 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using WebApplication1.ApplicationDbContext;
-using WebApplication1.Models;
+﻿using MailKit.Net.Smtp;
+using MailKit.Security;
+using MimeKit;
+using System;
+using System.Linq;
+using System.Net;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 
 [ApiController]
-[Route("api/[controller]/[Action]")]
+[Route("api/[controller]")]
 public class UserController : ControllerBase
 {
-    private readonly AppDbContext _context;
+    private readonly IConfiguration _configuration;
 
-    public UserController(AppDbContext context)
+    public UserController(IConfiguration configuration)
     {
-        _context = context;
+        _configuration = configuration;
     }
 
-    // GET: api/Todo
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+    [HttpPost("SendMail")]
+    public async Task<IActionResult> SendMail([FromBody] SendMailModel model)
     {
-        return await _context.Users.ToListAsync();
-    }
-
-    // GET: api/Todo/5
-    [HttpGet("{id}")]
-    public async Task<ActionResult<User>> GetUser(long id)
-    {
-        var userItem = await _context.Users.FindAsync(id);
-
-        if (userItem == null)
-        {
-            return NotFound();
-        }
-
-        return userItem;
-    }
-
-    // POST: api/Todo
-    [HttpPost]
-    public async Task<ActionResult<User>> PostUser(User userItem)
-    {
-        _context.Users.Add(userItem);
-        await _context.SaveChangesAsync();
-
-        return CreatedAtAction(nameof(GetUser), new { id = userItem.Id }, userItem);
-    }
-
-    // PUT: api/Todo/5
-    [HttpPut("{id}")]
-    public async Task<IActionResult> PutUser(long id, User userItem)
-    {
-        if (id != userItem.Id)
-        {
-            return BadRequest();
-        }
-
-        _context.Entry(userItem).State = EntityState.Modified;
-
         try
         {
-            await _context.SaveChangesAsync();
+            var randomUsername = GenerateRandomString(5);
+            var randomPassword = GenerateRandomString(8);
+
+            var smtpServer = _configuration.GetValue<string>("SmtpServer");
+            var smtpPort = _configuration.GetValue<int>("SmtpPort");
+            var smtpUsername = _configuration.GetValue<string>("SmtpUsername");
+            var smtpPassword = _configuration.GetValue<string>("SmtpPassword");
+
+            await SendEmail(model.Email, randomUsername, randomPassword, smtpServer, smtpPort, smtpUsername, smtpPassword);
+
+            return Ok("Почта успешно отправлена");
         }
-        catch (DbUpdateConcurrencyException)
+        catch (Exception ex)
         {
-            if (!UserExists(userItem.Username)) 
+            return StatusCode(500, $"Ошибка при отправке почты: {ex.Message}");
+        }
+    }
+
+    [HttpGet("ReceiveData")]
+    public IActionResult ReceiveData([FromQuery] string email)
+    {
+        try
+        {
+            Console.WriteLine($"Получен почтовый адрес: {email}");
+            return Ok($"Получен почтовый адрес: {email}");
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Ошибка при получении данных: {ex.Message}");
+        }
+    }
+
+    [HttpPost("ReceiveUserData")]
+    public IActionResult ReceiveUserData([FromBody] UserDataModel userData)
+    {
+        try
+        {
+            Console.WriteLine($"Получены данные пользователя: Имя - {userData.Name}, Почта - {userData.Email}, Номер - {userData.PhoneNumber}");
+
+            return Ok($"Получены данные пользователя: Имя - {userData.Name}, Почта - {userData.Email}, Номер - {userData.PhoneNumber}");
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Ошибка при получении данных: {ex.Message}");
+        }
+    }
+
+    private async Task SendEmail(string email, string login, string password, string smtpServer, int smtpPort, string smtpUsername, string smtpPassword)
+    {
+        using (var client = new SmtpClient())
+        {
+            client.ServerCertificateValidationCallback = (s, c, h, e) => true;
+            await client.ConnectAsync(smtpServer, smtpPort, SecureSocketOptions.StartTls);
+            await client.AuthenticateAsync(new NetworkCredential(smtpUsername, smtpPassword));
+
+            var message = new MimeMessage();
+            message.From.Add(new MailboxAddress("Название вашего приложения", smtpUsername));
+            message.To.Add(new MailboxAddress("Имя получателя", email));
+            message.Subject = "Информация о логине и пароле для входа в сайт Онлайн курсы";
+            message.Body = new TextPart("plain")
             {
-                return NotFound();
-            }
-            else
-            {
-                throw;
-            }
+                Text = $"Логин: {login}\nПароль: {password}\n\nдля входа в сайт Онлайн курсы"
+            };
+
+            await client.SendAsync(message);
+            await client.DisconnectAsync(true);
         }
-
-        return NoContent();
     }
 
-
-    // DELETE: api/Todo/5
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteUser(long id)
+    private string GenerateRandomString(int length)
     {
-        var userItem = await _context.Users.FindAsync(id);
-        if (userItem == null)
-        {
-            return NotFound();
-        }
-
-        _context.Users.Remove(userItem);
-        await _context.SaveChangesAsync();
-
-        return NoContent();
+        const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        var random = new Random();
+        return new string(Enumerable.Repeat(chars, length)
+          .Select(s => s[random.Next(s.Length)]).ToArray());
     }
+}
 
-    // POST: api/User/Register
-    [HttpPost("Register")]
-    public async Task<IActionResult> Register([FromBody] UserRegisterModel model)
-    {
-        if (UserExists(model.Username))
-        {
-            return Conflict("Username already exists");
-        }
+public class SendMailModel
+{
+    public string Email { get; set; }
+}
 
-        var user = new User
-        {
-            Username = model.Username,
-            Fio = model.Fio,
-            Age = model.Age,
-            Password = model.Password
-        };
-
-        _context.Users.Add(user);
-        await _context.SaveChangesAsync();
-
-        return CreatedAtAction(nameof(GetUser), new { id = user.Id }, user);
-    }
-
-    // POST: api/User/Login
-    [HttpPost("Login")]
-    public async Task<IActionResult> Login([FromBody] UserLoginModel model)
-    {
-        var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Username == model.Username && u.Password == model.Password);
-
-        if (existingUser == null)
-        {
-            return NotFound("Invalid username or password");
-        }
-
-        return Ok("Welcome!");
-    }
-
-
-    private bool UserExists(string username)
-    {
-        return _context.Users.Any(u => u.Username == username);
-    }
+public class UserDataModel
+{
+    public string Name { get; set; }
+    public string Email { get; set; }
+    public string PhoneNumber { get; set; }
 }

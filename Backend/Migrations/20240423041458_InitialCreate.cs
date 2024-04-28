@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
+using WebApplication1.ApplicationDbContext;
 
 #nullable disable
 
