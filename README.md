@@ -1,8 +1,8 @@
-### Языковые онлайн-курсы
-# Использованные библиотеки
-# Front-end
+# Языковые онлайн-курсы
+## Использованные библиотеки
+### Front-end
 react-router-dom
-# Back-end
+### Back-end
 Google. Apis. Auth
 Google. Apis.Gmail. v1
 MailKit
