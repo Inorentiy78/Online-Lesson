@@ -10,3 +10,7 @@
 - `MailKit`: Для работы с электронной почтой, например, для отправки писем с уведомлениями или подтверждениями.
 - `Microsoft.EntityFrameworkCore.Design`: Для проектирования и управления базой данных.
 - `Microsoft.EntityFrameworkCore.Sqlite`:
+## Установка зависимостей
+Для установки зависимостей
+
+bash npm install react-router-dom
