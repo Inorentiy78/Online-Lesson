@@ -8,27 +8,12 @@ import Header from './Header';
 
 
 const Video = () => {
-    const [selectedAnswer, setSelectedAnswer] = useState(null);
-    const [isPanelVisible, setPanelVisible] = useState(false);
-    const [isTestCompleted, setTestCompleted] = useState(false);
+   
 
-    const handleAnswerSelect = (answer) => {
-      setSelectedAnswer(answer);
-    };
-    const togglePanel = () => {
-        setPanelVisible(!isPanelVisible);
-    };
-
-    const handleToggle = (panelId) => {
-        const panel = document.getElementById(panelId);
-        if (panel) {
-            panel.classList.toggle('shows');
-        }
-    };
+    
   
     return (
         <div>
-            <div className="line-tops"></div>
                 <Header/>
  <p className='P'>Для изучения материала посмотрите видео-курс</p>
             <p className='p'>Язык: Анлийский язык</p>
@@ -65,3 +50,4 @@ const Video = () => {
 
 
 export default Video;
+
