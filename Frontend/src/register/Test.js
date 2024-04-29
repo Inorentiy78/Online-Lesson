@@ -43,15 +43,8 @@ const Test = () => {
     const handleAnswerSelect5 = (answer) => {
         setSelectedAnswer5(answer);
     };
-    // const handleCompleteTest = () => {
-    //     // Logic to handle completing the test
-    //     setTestCompleted(true);
-    //     // You can add further logic here, such as submitting the answers
-    // };
-  
     return (
         <div>
-            <div className="line-tops"></div>
                 <Header/>
 <p className='P'>Пройдите тест для закрепления материала</p>
 <p className='p'>Язык: Анлийский язык</p>
@@ -209,3 +202,4 @@ const Test = () => {
 
 
 export default Test;
+
