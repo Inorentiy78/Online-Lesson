@@ -1,87 +1,8 @@
-/*Home1.css*/
-.container {
-  position: absolute;
-  top: -6%; /* Можно регулировать в зависимости от того, насколько опустить окно */
-  transform: translateY(6%);
-  z-index: 100;
-  /* Другие стили остаются неизменными */
-}
-
- 
 /* Главный экран */
 .main-screen {
   position: relative;
   width: 1014px;
   height: 700px;
-  background: #FFFFFF;
-}
-
-/* Шапка */
-.header {
-  position: absolute;
-  width: 1014px;
-  height: 49px;
-  left: 0px;
-  top: 18px;
-}
-
-/* Кнопка "Войти" в шапке */
-.login-button-header {
-  position: absolute;
-  width: 86px;
-  height: 36px;
-  left: 888px;
-  top: 18px;
-  /* Добавьте остальные стили по желанию */
-}
-
-
-
-/* Онлайн курсы */
-.online-courses {
-  position: absolute;
-  width: 160px;
-  height: 24px;
-  left: 60px;
-  top: -8px; 
-font-weight: 300; 
-font-size: 25px;
-
-  /* Добавьте остальные стили по желанию */
-}
-
-/* Линия сверху */
-.line-top {
-  position: absolute;
-  width: 1479px;
-  height: 0px;
-  left: 0px;
-  top: 30px; /* Измените значение top на 30px или другое значение, которое соответствует вашим требованиям */
-  border: 1px solid #000000;
-}
-
-
-/* О курсах */
-.about-courses {
-  position: absolute;
-  width: 65px;
-  height: 18px;
-  left: 258px;
-  top: 1px;
-  font-weight: 20; 
-
-  /* Добавьте остальные стили по желанию */
-}
-/* Контакты */
-.contacts {
-  position: absolute;
-  width: 67px;
-  height: 18px;
-  left: 372px;
-  top: 1px;
-  font-weight: 20; 
-
-  /* Добавьте остальные стили по желанию */
 }
 
 /* Карточки с языковыми */
@@ -176,185 +97,35 @@ font-size: 25px;
   top: 470px;
   z-index: 1;
   font-size: 20px;
-
 }
 
-
-/* Rectangle 2 русс*/
-.rectangle-2 {
-  box-sizing: border-box;
-  position: absolute;
-  width: 300px;
-  height: 155px;
-  left: 430px;
-  top: 650px;
-  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
-  border: 1px solid #000000;
-  border-radius: 15px;
-  z-index: 0;
-  /* Добавьте остальные стили по желанию */
-}
-/*butt2 */
-.rectangle-3 {
-  box-sizing: border-box;
-  position: absolute;
-  width: 300px;
-  height: 155px;
-  left: 780px;
-  top: 650px;
-  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
-  border: 1px solid #000000;
-  border-radius: 15px;
-  z-index: 0;
-  /* Добавьте остальные стили по желанию */
-}
-.rectangle-4 {
-  box-sizing: border-box;
-  position: absolute;
-  width: 300px;
-  height: 155px;
-  left: 780px;
-  top: 250px;
-  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
-  border: 1px solid #000000;
-  border-radius: 15px;
-  z-index: 0;
-  /* Добавьте остальные стили по желанию */
+.asd {
+  display: flex;
+  justify-content: space-between; 
+  position: center;
 }
 
-
-
-/* Дополнительные стили при наведении */
-.butt2 {
-  position: absolute;
-  left: 625px;
-  top: 370px;
-  background: #E04040;
-  border-radius: 15px;
-  z-index: 1; /* Поднимаем кнопку над остальным контентом */
-  border: 1px solid transparent;
-  color: #FFFFFF;
-  cursor: pointer;
+.card-column1 {
+  display: flex;
+  flex-basis: 461px; /* Adjust the width to 461px */
+  height: 531px; /* Adjust the height to 531px */
+  flex-direction: column; 
+  margin-left: 500px;
+  margin-top: -28%;
 }
 
-
-
-/* .butt2.open {
-  /* Стили для открытого модального окна}  */
-
-
-/* Rectangle 3 Кит*/
-
-/*butt3 кит*/
-.butt3{
-  position: absolute;
-  left: 625px;
-  top: 580px;
-  background: #E04040;
-  border-radius: 15px;
-  z-index: 1;
-  border: 1px solid transparent; /* Добавляем прозрачную рамку */
-  color: #FFFFFF;
-  cursor: pointer;
+.card-column2 {
+  display: flex;
+  flex-basis: 861px; /* Adjust the width to 461px */
+  height: 531px; /* Adjust the height to 531px */
+  flex-direction: column; 
+  margin-top: -28%;
 }
-/* Rectangle 4 Итал*/
-
-/*butt4 итал*/
-.butt4{
-  position: absolute;
-  left: 980px;
-  top: 370px;
-  background: #E04040;
-  border-radius: 15px;
-  z-index: 1;
-  border: 1px solid transparent; /* Добавляем прозрачную рамку */
-  color: #FFFFFF;
-  cursor: pointer;
-}
-.butt5{
-  position: absolute;
-  left: 980px;
-  top: 775px;
-  background: #E04040;
-  border-radius: 15px;
-  z-index: 1;
-  border: 1px solid transparent; /* Добавляем прозрачную рамку */
-  color: #FFFFFF;
-  cursor: pointer;
-}
-.butt6{
-  position: absolute;
-  left: 980px;
-  top: 580px;
-  background: #E04040;
-  border-radius: 15px;
-  z-index: 1;
-  border: 1px solid transparent; /* Добавляем прозрачную рамку */
-  color: #FFFFFF;
-  cursor: pointer;
-}
-.butt7{
-  position: absolute;
-  left: 625px;
-  top: 775px;
-  background: #E04040;
-  border-radius: 15px;
-  z-index: 1;
-  border: 1px solid transparent; /* Добавляем прозрачную рамку */
-  color: #FFFFFF;
-}
-/* Rectangle 5 Англ*/
-.rectangle-5 {
-  box-sizing: border-box;
-  position: absolute;
-  width: 300px;
-  height: 155px;
-  left: 430px;
-  top: 250px;
-  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
-  border: 1px solid #000000;
-  border-radius: 15px;
-  z-index: 0;
-  /* Добавьте остальные стили по желанию */
-}
-/*butt5 англ*/
-
-/* Rectangle 6 Каз*/
-.rectangle-6 {
-  box-sizing: border-box;
-  position: absolute;
-  width: 300px;
-  height: 155px;
-  left: 780px;
-  top: 460px;
-  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
-  border: 1px solid #000000;
-  border-radius: 15px;
-  z-index: 0;
-  /* Добавьте остальные стили по желанию */
-}
-/*butt6 каз*/
-
-/* Rectangle 7 Испан*/
-.rectangle-7 {
-  box-sizing: border-box;
-  position: absolute;
-  width: 300px;
-  height: 155px;
-  left: 430px;
-  top: 460px;
-  background: linear-gradient(0deg, #F5B0B0, #F5B0B0), #F5B0B0;
-  border: 1px solid #000000;
-  border-radius: 15px;
-  z-index: 0;
-  /* Добавьте остальные стили по желанию */
-}
-/*butt7 */
 
 /* Стили для списка языковых курсов */
 .language-courses-list {
   position: absolute;
-  width: 647px;
+  width: 35%;
   height: 527px;
   left: 102px;
   top: 250px;
@@ -362,9 +133,7 @@ font-size: 25px;
   flex-direction: column;
   gap: 5px; /* Увеличиваем пространство между элементами в списке */
   font-weight: 20; 
-
 }
-
 
 /* Линия */
 .line {
@@ -377,7 +146,6 @@ font-size: 25px;
   transform: rotate(-90deg);
   /* Добавьте остальные стили по желанию */
 }
-
 
 /* Стили для поискового поля */
 .search-input {
@@ -392,8 +160,6 @@ font-size: 25px;
   top: 160px;
   left: 90px;
 }
-
-
 
 /* Стили для кнопки "Найти" */
 .search-button {
@@ -446,4 +212,62 @@ font-size: 25px;
 
 .language-card:hover {
   background-color: #e0e0e0; /* Изменяем цвет фона при наведении */
+}
+a {
+  text-decoration: none;
+}
+a.hover{
+  color: #E04040;
+}
+
+.no-results {
+  position: absolute;
+  top: -5%; /* Поднимаем элемент на 50% относительно своей высоты */
+  left: 18%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 120%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 999;
+}
+@media only screen and (max-width: 700px) {
+  .no-results {
+    font-size: 100%; /* Уменьшаем размер шрифта для мобильных устройств */
+    left: 10%; /* Изменяем отступ слева для центрирования */
+    top: -3%; /* Изменяем вертикальный отступ для центрирования */
+  }
+}
+
+@media (max-width: 380px) {
+  .main-screen {
+    width: 50%;
+  }
+
+  .search-input {
+    width: 70vw; /* Adjust the width to fit mobile screens */
+    left: 10px; /* Move the search input more to the left */
+  }
+
+  .search-button {
+    left: 100vw; /* Move the search button more to the left */
+  }
+
+  .language-courses-list {
+    left: 5vw;
+    width: 100%; /* Adjust width for smaller screens */
+  }
+
+  .asd {
+    justify-content: center; /* Center align the language cards */
+    flex-direction: column;
+  }
+
+  .card-column1,
+  .card-column2 {
+    flex-basis: 50%; /* Adjust flex-basis to your preference */
+    margin: 10px; /* Adjust margin as needed */
+    flex-direction: column;
+  }
 }

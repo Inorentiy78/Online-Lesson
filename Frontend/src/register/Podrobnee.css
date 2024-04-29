@@ -1,5 +1,8 @@
+/*Podrobnee.css*/
 .container00 {
     position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9000;
 }
 
 .modal-container0 {
@@ -16,12 +19,25 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     overflow: auto;
 }
+.butt55{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 1150px;
+    top: 120px;
+    border-radius: 15px;
+    z-index: 9000;
+    border: 1px solid transparent; /* Добавляем прозрачную рамку */
+    color: black;
+    z-index: 9000;
+    background-color: #F5B0B0;
+}
 
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 80%;
+    width: 10%;
     height: 80%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
@@ -63,7 +79,6 @@
     border: 1px solid #000000;
     border-radius: 15px;
     z-index: 1000;
-    /* Добавьте остальные стили по желанию */
 }
 
 .nazvanie,
@@ -118,7 +133,7 @@
     top: 540px;
     background: #E04040;
     border-radius: 15px;
-    z-index: 9000;
+    z-index: 1000;
     border: 1px solid transparent;
     color: #FFFFFF;
     position: absolute;

@@ -38,9 +38,9 @@
 }
 
 .login-button {
-  position: fixed; /* Позиционирование фиксированное */
-  top: 10px; /* Расстояние от верхнего края экрана */
-  right: 60px; /* Расстояние от правого края экрана */
+  position: fixed; /* Change position to fixed */
+  top: 10px; /* Adjust top position as needed */
+  right: 20px; /* Adjust right position as needed */
   background: #E04040;
   color: #FFFFFF;
   border: none;
@@ -48,6 +48,7 @@
   padding: 7px 17px;
   font-size: 16px;
   cursor: pointer;
+  z-index: 1001; /* Ensure it's above other content */
 }
 
 .login-panel {

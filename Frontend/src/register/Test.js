@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Test.css'; // Подключаем файл стилей
+import Header from './Header';
 
 const Test = () => {
     const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -51,49 +52,7 @@ const Test = () => {
     return (
         <div>
             <div className="line-tops"></div>
-                <div className="online-coursess">Онлайн-курсы</div>
-                
-                <Link to="/about-courses" className='about-coursess'>О курсах</Link>
-                         <Link to="/contacts" className="contactss">Контакты</Link>
-                <div className='nametexts'>Имя</div>
-                <div className="circles" onClick={togglePanel}>
-                    <span className="letters">И</span>
-                </div>
-                {isPanelVisible && (
-  <div className={isPanelVisible ? "panel visible" : "panel"}>
-    <div className="comboBoxHeader" onClick={() => handleToggle('comboBoxPanel')}>
-        Мои курсы
-        <span className="arrow">&#9662;</span>
-    </div>
-    <div id="comboBoxPanel" className="comboBoxPanel">
-        <p className="Kyrs1" onClick={() => handleToggle('PanelKyrs1')}>
-            Курс 1
-            <span className="arrow" onClick={(e) => { e.stopPropagation(); handleToggle('PanelKyrs1')}}>&#9662;</span>
-        </p>
-        <div id="PanelKyrs1" className="PanelKyrs1">
-        <p><Link to="/tests" className='test-link'>Тестовые задания</Link></p>
-        <p><Link to="/video" className='video-link'>видео-уроки</Link></p>
-        </div>
-        <p className="Kyrs2" onClick={() => handleToggle('PanelKyrs2')}>
-            Курс 2
-            <span className="arrow" onClick={(e) => { e.stopPropagation(); handleToggle('PanelKyrs2')}}>&#9662;</span>
-        </p>
-        <div id="PanelKyrs2" className="PanelKyrs2">
-        <p><Link to="/tests" className='test-link'>Тестовые задания</Link></p>
-        <p><Link to="/video" className='video-link'>видео-уроки</Link></p>
-        </div>
-        <p className="Kyrs3" onClick={() => handleToggle('PanelKyrs3')}>
-            Курс 3
-            <span className="arrow" onClick={(e) => { e.stopPropagation(); handleToggle('PanelKyrs3')}}>&#9662;</span>
-        </p>
-        <div id="PanelKyrs3" className="PanelKyrs3">
-        <p><Link to="/tests" className='test-link'>Тестовые задания</Link></p>
-        <p><Link to="/video" className='video-link'>видео-уроки</Link></p>
-        </div>
-    </div>
-    {/* Добавьте другие пункты меню по желанию */}
-  </div>
-)}
+                <Header/>
 <p className='P'>Пройдите тест для закрепления материала</p>
 <p className='p'>Язык: Анлийский язык</p>
     <div className="table-container1">

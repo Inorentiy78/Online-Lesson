@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './Home2.css';
 import './Podrobnee.css';
 import Podrobnee from './Podrobnee';
+import Header from './Header';
 
 function Home2() {
     const [isPanelVisible, setPanelVisible] = useState(false);
@@ -50,51 +51,9 @@ function Home2() {
         <div className="container0">
                      <Podrobnee isOpen={modalOpen} onClose={closeModal} language={selectedLanguage} />
                      <div className="main-screen0"></div>
-                     <div className="header0">
-                         <div className="line-top0"></div>
-                         <div className="online-courses0">Онлайн-курсы</div>
-                         <Link to="/about-courses" className='about-courses0'>О курсах</Link>
-                         <Link to="/contacts" className="contacts0">Контакты</Link>
-                         <div className='nametext0'>Имя</div>
-                          <div className="circle0" onClick={togglePanel}>
-                            <span className="letter0">И</span>
-                         </div> 
-                     </div>
-                         {isPanelVisible && (
-  <div className={isPanelVisible ? "panel visible" : "panel"}>
-    <div className="comboBoxHeader" onClick={() => handleToggle('comboBoxPanel')}>
-                                     Мои курсы
-                                     <span className="arrow">&#9662;</span>
-    </div>
-    <div id="comboBoxPanel" className="comboBoxPanel">
-        <p className="Kyrs1" onClick={() => handleToggle('PanelKyrs1')}>
-            Курс 1
-            <span className="arrow" onClick={(e) => { e.stopPropagation(); handleToggle('PanelKyrs1')}}>&#9662;</span>
-        </p>
-        <div id="PanelKyrs1" className="PanelKyrs1">
-        <p><Link to="/tests" className='test-link'>Тестовые задания</Link></p>
-        <p><Link to="/video" className='video-link'>видео-уроки</Link></p>
-        </div>
-        <p className="Kyrs2" onClick={() => handleToggle('PanelKyrs2')}>
-            Курс 2
-            <span className="arrow" onClick={(e) => { e.stopPropagation(); handleToggle('PanelKyrs2')}}>&#9662;</span>
-        </p>
-        <div id="PanelKyrs2" className="PanelKyrs2">
-        <p><Link to="/tests" className='test-link'>Тестовые задания</Link></p>
-        <p><Link to="/video" className='video-link'>видео-уроки</Link></p>
-        </div>
-        <p className="Kyrs3" onClick={() => handleToggle('PanelKyrs3')}>
-            Курс 3
-            <span className="arrow" onClick={(e) => { e.stopPropagation(); handleToggle('PanelKyrs3')}}>&#9662;</span>
-        </p>
-        <div id="PanelKyrs3" className="PanelKyrs3">
-        <p><Link to="/tests" className='test-link'>Тестовые задания</Link></p>
-        <p><Link to="/video" className='video-link'>видео-уроки</Link></p>
-        </div>
-    </div>
-    {/* Добавьте другие пункты меню по желанию */}
-  </div>
-)}
+                     <Header/>
+                     
+                         
                 
                 <div className="language-cards">
                     <div className="english-language">Английский язык</div>
@@ -104,7 +63,6 @@ function Home2() {
                     <div className="chinese-language">Китайский язык</div>
                     <div className="russian-language">Русский язык</div>
                 </div>
-                <div classname="innerparts">
                
                 <input type="text" className="search-input" placeholder="Введите название курса..." />
     
@@ -128,7 +86,7 @@ function Home2() {
                 
                 <div className="search-button">  Найти</div>
                 <div className="search-string"></div>
-            </div>
+           
             <div className="language-courses-list">
                 <div className="english-card">Английский язык</div>
                 <div className="spanish-card">Испанский язык</div>

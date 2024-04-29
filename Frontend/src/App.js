@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import DisRegistr from './register/DisRegistr';
 import Home1 from './register/Home1';
 import OKyrsah from './register/OKyrsah';
 import Contacts from './register/Contacts';
@@ -32,19 +31,20 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Podrobnee isOpen={modalOpen} onClose={closeModal} language={selectedLanguage} />
+         <Podrobnee isOpen={modalOpen} onClose={closeModal} language={selectedLanguage} />
+         
          <Router>
           <Routes>
-           <Route exact path="/" element={<Home2 />} />
-           {/*   <Route exact path="/" element={<Home1 />} openModal={openModal} onLoginClick={handleLoginClick} />*/} 
+         {/*<Route exact path="/" element={<Home2 />} />*/}
+                <Route exact path="/" element={<Home1 />} openModal={openModal} onLoginClick={handleLoginClick} /> 
             <Route path="/about-courses" element={<OKyrsah />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/tests" element={<Test />} />
             <Route path="/video" element={<Video/>} />
           </Routes>
         </Router>
-        {/*<Zapisatsa/>*/}
-        {/* <DisRegistr handleLoginClick={handleLoginClick} />*/}
+        
+         {/*<Zapisatsa/> */}
       </header>
     </div>
   );

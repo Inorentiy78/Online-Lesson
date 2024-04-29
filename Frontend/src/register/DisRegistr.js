@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+
 
 function DisRegistr() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [view, setView] = useState('initial'); // initial or login
   const [message, setMessage] = useState('');
+  const [isPanelVisible, setPanelVisible] = useState(false);
 
   const handleLoginClick = () => {
     setView('login');
@@ -41,6 +43,24 @@ function DisRegistr() {
       setMessage('Ошибка при входе.');
     }
   };
+  useEffect(() => {
+    const handleClick = (event) => {
+        const panel = document.querySelector('.login-panel');
+        const loginButton = document.querySelector('.login-button');
+        if (panel && loginButton && loginButton.contains(event.target)) {
+            setPanelVisible(true); // Open the login panel if the login button is clicked
+        } else if (panel && !panel.contains(event.target)) {
+            setPanelVisible(false); // Close the login panel if clicked outside
+        }
+    };
+
+    document.addEventListener('click', handleClick);
+
+    return () => {
+        document.removeEventListener('click', handleClick);
+    };
+}, [isPanelVisible, view]);
+
 
   return (
     <div className="App">
@@ -50,10 +70,12 @@ function DisRegistr() {
         </div>
       )}
       {view === 'login' && (
-        <div className="login">
-          <input type="text" class="login-input" placeholder="Логин" value={username} onChange={(e) => setUsername(e.target.value)} />
-          <input type="password" class="login-input" placeholder="Пароль" value={password} onChange={(e) => setPassword(e.target.value)} />
-          <button onClick={handleLogin}>Войти</button>
+        <div className="login-panel">
+          <div className="login-content">
+            <input type="text" className="login-input" placeholder="Логин" value={username} onChange={(e) => setUsername(e.target.value)} />
+            <input type="password" className="login-input" placeholder="Пароль" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <button  className="loginbutton" onClick={handleLogin}>Войти</button>
+          </div>
           {message && <p className="login-message">{message}</p>}
         </div>
       )}
