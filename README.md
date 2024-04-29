@@ -15,5 +15,6 @@
 
 ```bash npm install react-router-dom ```
 
+## Дизайн в Figma
 
-
+```bash https://www.figma.com/file/gVGBwspRVe7kph9Sujbrvw/Untitled?type=design&node-id=0-1&mode=design&t=ilznmO3kQ7jowZiW-0  ```
