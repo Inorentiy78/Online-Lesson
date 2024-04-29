@@ -70,22 +70,7 @@ const Header = () => {
         <p><Link to="/tests" className='test-link'>Тестовые задания</Link></p>
         <p><Link to="/video" className='video-link'>видео-уроки</Link></p>
         </div>
-        <p className="Kyrs2" onClick={() => handleToggle('PanelKyrs2')}>
-            Курс 2
-            <span className="arrow" onClick={(e) => { e.stopPropagation(); handleToggle('PanelKyrs2')}}>&#9662;</span>
-        </p>
-        <div id="PanelKyrs2" className="PanelKyrs2">
-        <p><Link to="/tests" className='test-link'>Тестовые задания</Link></p>
-        <p><Link to="/video" className='video-link'>видео-уроки</Link></p>
-        </div>
-        <p className="Kyrs3" onClick={() => handleToggle('PanelKyrs3')}>
-            Курс 3
-            <span className="arrow" onClick={(e) => { e.stopPropagation(); handleToggle('PanelKyrs3')}}>&#9662;</span>
-        </p>
-        <div id="PanelKyrs3" className="PanelKyrs3">
-        <p><Link to="/tests" className='test-link'>Тестовые задания</Link></p>
-        <p><Link to="/video" className='video-link'>видео-уроки</Link></p>
-        </div>
+        
     </div>
     {/* Добавьте другие пункты меню по желанию */}
   </div>
