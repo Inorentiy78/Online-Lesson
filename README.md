@@ -13,4 +13,7 @@
 ## Установка зависимостей
 Для установки зависимостей
 
-bash npm install react-router-dom
+```bash npm install react-router-dom ```
+
+
+
