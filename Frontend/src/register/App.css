@@ -40,7 +40,7 @@
 .login-button {
   position: absolute;
   top: -10px;
-  right: -65%;
+  right: -450px;
   background: #E04040;
   color: #FFFFFF;
   border: none;
@@ -61,4 +61,15 @@
   z-index: 1000;
   max-width: 400px; /* Максимальная ширина панели */
   width: 30%; /* Ширина панели занимает всю доступную ширину */
+}
+.logout-button{
+  position: relative;
+  top: -15%;
+  left: 157%;
+  background: #E04040;
+  color: #FFFFFF;
+  z-index: 1100;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 17px;
 }
