@@ -1,34 +1,40 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css'; // Assuming you have a separate CSS file for styling
-import DisRegistr from './DisRegistr'; // Import the DisRegistr component
+import './Header.css';
+import DisRegistr from './DisRegistr';
 
 const Header = () => {
     const [isPanelVisible, setPanelVisible] = useState(false);
-    const [isLoggedIn, setIsLoggedIn] = useState(false); // Assuming isLoggedIn state is defined somewhere
+    const [isLoggedIn, setIsLoggedIn] = useState(true);
 
     useEffect(() => {
-        // Обработчик клика на весь документ
         const handleClickOutside = (event) => {
-            const panel = document.getElementById('comboBoxPanel'); // Use the ID of the panel
+            const panel = document.getElementById('comboBoxPanels');
             if (panel && !panel.contains(event.target)) {
                 setPanelVisible(false);
             }
         };
 
-        // Добавляем обработчик только при открытой панели
         if (isPanelVisible) {
             document.addEventListener('click', handleClickOutside);
         }
 
-        // Очищаем обработчик при размонтировании компонента или закрытии панели
         return () => {
             document.removeEventListener('click', handleClickOutside);
         };
     }, [isPanelVisible]);
 
-    const togglePanel = () => {
+    const togglePanel = (event) => {
+        event.stopPropagation(); // Остановить всплытие события, чтобы не вызывались другие обработчики
         setPanelVisible(!isPanelVisible);
+    };
+
+    const handleLogout = () => {
+        setIsLoggedIn(false);
+    };
+
+    const handleLogin = () => {
+        setIsLoggedIn(true);
     };
 
     const handleToggle = (panelId) => {
@@ -37,7 +43,6 @@ const Header = () => {
             panel.classList.toggle('show');
         }
     };
-
     return (
         <div className="header">
             <div className="line-top"></div>
@@ -46,11 +51,11 @@ const Header = () => {
             <Link to="/contacts" className="contacts">Контакты</Link>
             {isLoggedIn ? (
                 <>
-                    <div className='nametext0'>Имя</div>
-                          <div className="circle0" onClick={togglePanel}>
-                            <span className="letter0">И</span>
-                      </div>
-                         {isPanelVisible && (
+                    <div className='Name'>Админ</div>
+                    <div className="circle0" onClick={(e) => togglePanel(e)}>
+                        <span className="letter0">А</span>
+                    </div>
+                    {isPanelVisible && (
   <div className={isPanelVisible ? "panel visible" : "panel"}>
     <div className="comboBoxHeader" onClick={() => handleToggle('comboBoxPanel')}>
                                      Мои курсы
@@ -85,10 +90,11 @@ const Header = () => {
     {/* Добавьте другие пункты меню по желанию */}
   </div>
 )}
+                    <button className="logout-button" onClick={handleLogout}>Выйти</button>
                 </>
             ) : (
-                    <DisRegistr />
-                )}
+                <DisRegistr onLogin={handleLogin} />
+            )}
         </div>
     );
 };
