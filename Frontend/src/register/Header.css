@@ -176,17 +176,13 @@
   display: block;
 }
 
-.PanelKyrs1,
-.PanelKyrs2,
-.PanelKyrs3 {
+.PanelKyrs1 {
   display: none;
   top: 50px;
   right: 70px;
 }
 
-.PanelKyrs1.show,
-.PanelKyrs2.show,
-.PanelKyrs3.show {
+.PanelKyrs1.show {
   right: 70px;
   display: block;
 }
