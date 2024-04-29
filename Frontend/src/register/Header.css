@@ -57,25 +57,25 @@
   /* Добавьте остальные стили по желанию */
 }
   
-.nametext0{
+.Name{
   position: absolute;
+  margin-top: -1%;
   font-size: 20px;
-  right: -400px;
-  top: -8px;
+  left: 142%;
   z-index: 1100;
 }
     
 .circle0 {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 5%;
+  height: 80%;
   border-radius: 50%;
   background-color: #E87C7C;
   display: flex;
   justify-content: center;
   align-items: center;
-  right: -455px;
-  top: -14px;
+  margin-top: -1%;
+  left: 150%;
   z-index: 1100;
 }
 
