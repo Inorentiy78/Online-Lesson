@@ -1,8 +1,9 @@
+
+
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-
-function DisRegistr() {
+function DisRegistr(props) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [view, setView] = useState('initial'); // initial or login
@@ -14,27 +15,21 @@ function DisRegistr() {
   };
 
   const handleLogin = async () => {
-    const user = { username, password };
 
     try {
-      const response = await fetch('http://localhost:5236/api/User/Login/Login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(user)
-      });
+      const response = await fetch('https://localhost:7045/api/AdminCredentials/GetAdminCredentials');
 
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
 
-      // Assuming the response is text
-      const data = await response.text();
+      const data = await response.json();
 
-      if (data === 'Success') {
-        // Handle successful login here
-        setView('profile');
+      if (data) {
+        if(data[0].username == username && data[0].password == password){
+          props.onLogin();
+          setView('profile');
+        }
       } else {
         setMessage('Неправильный логин или пароль.');
       }
@@ -43,24 +38,24 @@ function DisRegistr() {
       setMessage('Ошибка при входе.');
     }
   };
+
   useEffect(() => {
     const handleClick = (event) => {
-        const panel = document.querySelector('.login-panel');
-        const loginButton = document.querySelector('.login-button');
-        if (panel && loginButton && loginButton.contains(event.target)) {
-            setPanelVisible(true); // Open the login panel if the login button is clicked
-        } else if (panel && !panel.contains(event.target)) {
-            setPanelVisible(false); // Close the login panel if clicked outside
-        }
+      const panel = document.querySelector('.login-panel');
+      const loginButton = document.querySelector('.login-button');
+      if (panel && loginButton && loginButton.contains(event.target)) {
+        setPanelVisible(true); // Open the login panel if the login button is clicked
+      } else if (panel && !panel.contains(event.target)) {
+        setPanelVisible(false); // Close the login panel if clicked outside
+      }
     };
 
     document.addEventListener('click', handleClick);
 
     return () => {
-        document.removeEventListener('click', handleClick);
+      document.removeEventListener('click', handleClick);
     };
-}, [isPanelVisible, view]);
-
+  }, [isPanelVisible, view]);
 
   return (
     <div className="App">
@@ -74,14 +69,13 @@ function DisRegistr() {
           <div className="login-content">
             <input type="text" className="login-input" placeholder="Логин" value={username} onChange={(e) => setUsername(e.target.value)} />
             <input type="password" className="login-input" placeholder="Пароль" value={password} onChange={(e) => setPassword(e.target.value)} />
-            <button  className="loginbutton" onClick={handleLogin}>Войти</button>
+            <button className="loginbutton" onClick={handleLogin}>Войти</button>
           </div>
           {message && <p className="login-message">{message}</p>}
         </div>
       )}
       {view === 'profile' && (
         <div className="profile">
-          <img src="path_to_profile_image" alt="Profile" className="profile-icon" />
           <button className="logout-button" onClick={() => setView('initial')}>Выйти</button>
         </div>
       )}
